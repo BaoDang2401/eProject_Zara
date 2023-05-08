@@ -23,7 +23,7 @@ eProject documentation at https://github.com/BaoDang2401/eProject_Zara/tree/main
 
 ============================
 
-eProject published at https://github.com/BaoDang2401/eProject_Zara
+eProject published at https://baodang2401.github.io/eProject_Zara/
 
 ============================
 
