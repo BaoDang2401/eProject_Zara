@@ -19,7 +19,7 @@ Student1455775: Nguyễn Thùy Trang
 
 ============================
 
-eProject documentation at https://github.com/cuoilen007/test/tree/main/document
+eProject documentation at https://github.com/BaoDang2401/eProject_Zara/tree/main/document
 
 ============================
 
