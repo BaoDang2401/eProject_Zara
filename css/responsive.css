@@ -1,0 +1,51 @@
+
+@media (max-width: 767px){
+    .banner{
+    }
+    .banner-img{
+        height: 100%;
+    }
+    .banner-zara{
+        padding: 10px;
+        text-align: center;
+
+      }
+      .banner-contact{
+        padding: 10px;
+        text-align: center;
+      }
+      .banner-logo{
+        display: none;
+      }
+      #header-carousel{
+        display: none;
+      }
+      .contact-form{
+        max-width: 100%;
+    }
+    .contact{
+      background: white;
+
+  }
+}
+@media (min-width: 1200px) {
+    .banner{
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .banner-zara{
+        position: absolute;
+        padding: 20px;
+        right: 0px;
+        top: 10px;
+        max-width: 50%;
+      }
+      .banner-contact{
+        position: absolute;
+        padding: 40px;
+        top: 20px;
+        max-width: 47%;
+      }
+      
+    }
