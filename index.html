@@ -21,8 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <!-- Icon Font Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/5c0abb1169.js" crossorigin="anonymous"></script>
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -60,8 +59,9 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid bg-white sticky-top">
-        <div class="container-xxl nav-header">
+        <div class="d-flex justify-content-center nav-header">
             <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                
                 <a href="index.html" class="navbar-brand pb-3 px-4 pt-3">
                     <img src="https://f67-zpg-r.zdn.vn/5383193464500968785/8138c816ff9620c87987.jpg" width="150px"
                         alt="">
@@ -100,16 +100,16 @@
                         </div>
                         <a href="#offers" class="nav-item nav-link">Offer & Discounts</a>
                         <a href="#contact" class="nav-item nav-link">Contact us</a>
-                        <a href="#" class="nav-item nav-link" id="btn-hide" data-bs-toggle="modal" data-bs-target="#authModal"><i class="fa-regular fa-user"></i> Login</a>
+                        <a href="#" class="nav-item nav-link px-4" id="btn-hide" data-bs-toggle="modal" data-bs-target="#authModal"><i class="fa-regular fa-user"></i> Log In</a>
 
-                        <div class="nav-item dropdown">
+                        <div class="nav-item dropdown px-5">
                             <a href="#" class="nav-link dropdown-toggle" id="nav-name" style="display:none;">Hello,
                               <span id="fullnameOutput" class="text-primary"></span>
                             </a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
                                 <a href="#" class="dropdown-item" id="changename">Change Name</a>
                                 <a href="#" class="dropdown-item" id="changepassword">Change Password</a>
-                                <a href="/" class="dropdown-item" id="logoutLink">Logout</a>
+                                <a href="/" class="dropdown-item" id="logoutLink">Log Out</a>
                             </div>
                           </div>
 
@@ -165,16 +165,16 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="authModalLabel">Sign in / Sign Up</h5>
+                <h5 class="modal-title" id="authModalLabel">Log in / Register</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" id="registerTab" data-bs-toggle="tab" href="#loginForm">Sign In</a>
+                        <a class="nav-link active" id="registerTab" data-bs-toggle="tab" href="#loginForm">Log in</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="loginTab" data-bs-toggle="tab" href="#registerForm">Sign Up</a>
+                        <a class="nav-link" id="loginTab" data-bs-toggle="tab" href="#registerForm">Register</a>
                     </li>
                 </ul>
                 <div class="tab-content mt-3">
@@ -187,9 +187,9 @@
                               <div class="col-md-6 mb-4">
               
                                 <div class="form-outline">
-                                    <label class="form-label" for="loginUsername">Username</label>
+                                    <label class="form-label" for="loginPhone">Phone</label>
 
-                                  <input type="text" id="loginUsername" name="loginUsername" class="form-control form-control-lg" />
+                                  <input type="text" id="loginPhone" name="loginPhone" class="form-control form-control-lg" />
                                 </div>
               
                               </div>
@@ -229,9 +229,9 @@
                               <div class="col-md-6 mb-4">
               
                                 <div class="form-outline">
-                                    <label class="form-label" for="username">Username</label>
+                                    <label class="form-label" for="phone">phone</label>
 
-                                  <input type="text" id="username" name="username" class="form-control form-control-lg" />
+                                  <input type="text" id="phone" name="phone" class="form-control form-control-lg" />
                                 </div>
               
                               </div>
@@ -624,7 +624,7 @@
                         care and comprehensive medical services to all patients.</p>
                 </div>
                 <div class="col-lg-6 col-md-12">
-                <h2 class="fs-4 text-primary mb-4 text-center">Communicate with us:</h2>
+                <h2 class="fs-4 text-primary mb-4 text-center">Please Leave Us A Message</h2>
                 <div class="row g-3 form-contact pb-3">
                     <div class="col-sm-6 col-lg-6 col-md-6">
                         <div class="form-floating">
@@ -676,10 +676,9 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="successModalLabel">Thanks for contact!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="successModalLabel">Thanks For Contact</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
                 </div>
                 <div class="modal-body">
                     <p id="successMessage"></p>
@@ -739,6 +738,12 @@
 
   document.getElementById("successMessage").innerHTML = successMessage;
   $('#successModal').modal('show');
+// Reset giá trị của các trường input sau khi xử lý form
+document.getElementById("date").value = "";
+  document.getElementById("time").value = "";
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("messageInput").value = "";
 }
 
 

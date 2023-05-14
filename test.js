@@ -5,18 +5,18 @@ $(document).ready(function() {
       event.preventDefault();
   
       var fullname = $('#fullname').val();
-      var username = $('#username').val();
+      var phone = $('#phone').val();
       var password = $('#password').val();
       $('#fullnameOutput').text(fullname);
 
-      if (checkExistingUser(username)) {
+      if (checkExistingUser(phone)) {
         $('#message').text('Tên người dùng đã tồn tại. Vui lòng chọn tên người dùng khác.');
         return;
       }
   
-      saveUser(username, password, fullname);
+      saveUser(phone, password, fullname);
   
-      $('#username').val('');
+      $('#phone').val('');
       $('#password').val('');
       $('#message').text('Đăng kí thành công! Vui lòng đăng nhập để tiếp tục.');
     });
@@ -24,22 +24,22 @@ $(document).ready(function() {
     $('#loginForm').submit(function(event) {
       event.preventDefault();
   
-      var username = $('#loginUsername').val();
+      var phone = $('#loginPhone').val();
       var password = $('#loginPassword').val();
   
-      if (!checkExistingUser(username)) {
+      if (!checkExistingUser(phone)) {
         $('#message2').text('Tên người dùng không tồn tại. Vui lòng kiểm tra lại.');
         return;
       }
   
-      if (!checkPassword(username, password)) {
+      if (!checkPassword(phone, password)) {
         $('#message2').text('Mật khẩu không đúng. Vui lòng kiểm tra lại.');
         return;
       }
       $('#message2').text('Đăng nhập thành công!');
   
-      saveLoggedInUser(username);
-      showLoggedInUser(username);
+      saveLoggedInUser(phone);
+      showLoggedInUser(phone);
       
     });
   
@@ -129,16 +129,16 @@ $('#changepassword').click(function(event) {
     }
   }
   
-  function saveLoggedInUser(username) {
-    localStorage.setItem('loggedInUser', username);
+  function saveLoggedInUser(phone) {
+    localStorage.setItem('loggedInUser', phone);
   }
   
   function removeLoggedInUser() {
     localStorage.removeItem('loggedInUser');
   }
   
-  function showLoggedInUser(username) {
-    $('#loggedInUser').text(username);
+  function showLoggedInUser(phone) {
+    $('#loggedInUser').text(phone);
     $('#navbar').show();
     $('#nav-name').show();
     $('#btn-hide').hide();
@@ -152,23 +152,23 @@ $('#changepassword').click(function(event) {
     $('#btn-hide').show();
   }
   
-  function checkExistingUser(username) {
+  function checkExistingUser(phone) {
     if (localStorage.getItem('users')) {
       var users = JSON.parse(localStorage.getItem('users'));
-      return users.hasOwnProperty(username);
+      return users.hasOwnProperty(phone);
     }
   
     return false;
   }
   
-  function saveUser(username, password, fullname) {
+  function saveUser(phone, password, fullname) {
     if (localStorage.getItem('users')) {
       var users = JSON.parse(localStorage.getItem('users'));
     } else {
       var users = {};
     }
   
-    users[username] = {
+    users[phone] = {
       password: password
     };
   
@@ -178,11 +178,11 @@ $('#changepassword').click(function(event) {
   
   
   
-  function checkPassword(username, password) {
+  function checkPassword(phone, password) {
     if (localStorage.getItem('users')) {
       var users = JSON.parse(localStorage.getItem('users'));
   
-      if (users.hasOwnProperty(username) && users[username].password === password) {
+      if (users.hasOwnProperty(phone) && users[phone].password === password) {
         return true;
       }
     }
