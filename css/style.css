@@ -4,7 +4,10 @@
     --light: #F1F3FA;
     --dark: #1C2035;
 }
+input::placeholder {
+    font-size: 15px;
 
+}
 a {
     text-decoration: none;
 }
