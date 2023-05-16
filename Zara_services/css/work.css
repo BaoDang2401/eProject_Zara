@@ -9,19 +9,19 @@
     margin-left: auto;
     margin-right: auto;
 }
-h1{
+h2{
     text-align: center;
-    font-size: 30px;
     padding-top: 25px;
     padding-bottom: 20px;
     padding-left: 20px
 }
 b{
-    font-size: 25px;
-}
-p{  
-    text-align: justify;
     font-size: 20px;
+}
+
+div{
+    display: block;
+    text-align: justify;
 }
 .img1{
     height: 100%;
@@ -44,3 +44,4 @@ p{
     width: 100%;
     margin-bottom: -80px;
 }
+

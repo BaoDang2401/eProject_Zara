@@ -10,9 +10,8 @@
     padding-left: auto;
     padding-right: auto;
 }
-h1{
+h2{
     text-align: center;
-    font-size: 30px;
     padding-top: 25px;
 }
 .a1{
@@ -21,6 +20,7 @@ h1{
 }
 .t1{
     padding-right: 20px;
+    text-indent: 25px;
 }
 .img1{
     height: 100%;
@@ -49,12 +49,17 @@ h1{
     height: 80%;
 }
 b{
-    font-size: 25px;
-    padding: 30px 0 20px 0;
+    font-size: 20px;
 }
 .text1{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+div{
+    display: block;
+    text-align: justify;
+}
+.indent{
+    text-indent: 25px;
+}
 

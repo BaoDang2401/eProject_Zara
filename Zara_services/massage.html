@@ -22,19 +22,19 @@
 <body ng-app="myApp">
     
     <div class="container" ng-controller="myController1">
-
+    <div class="all">
         <div>
-            <h1>Massage therapy</h1>
+            <h2>MASSAGE THERAPY</h2>
         </div>
-    
+
         <div class="row">
-            <p><b>Overview</b></p>
+            <p><b> 1. Overview</b></p>
     
             <div ng-repeat="x in myData" class="col-lg-6 col-md-12 col-sm-12">
                 <div>{{x.massage1}}</div> <br>
                 <div>{{x.massage2}}</div>
                 <div>
-                    <p class="x1"><b>Studies of massage benefits have found massage can:</b></p>
+                    <p class="x1"><b>2. Studies of massage benefits have found massage can:</b></p>
                     <ul>
                         <li>Help reduce stress.</li>
                         <li>Lessen pain and muscle tightness.</li>
@@ -53,12 +53,12 @@
         </div>
         <br>
         <div class="row">
-            <p><b>Can massage therapy be helpful for people with HIV/AIDS?</b></p>
+            <p><b>3. Can massage therapy be helpful for people with HIV/AIDS?</b></p>
             <div class="col-lg-4 col-md-12 col-sm-12">
                 <img class="img2" src="images/medicalAid/massage/massage2.png" alt="">
             </div>
             <div ng-repeat="x in myData" class="col-lg-8 col-md-12 col-sm-12">
-                <div>{{x.massage4}}</div> <br>
+                <div >{{x.massage4}}</div> <br>
                 <div>{{x.massage5}}</div> <br>
                 <div>{{x.massage6}}</div> <br>
             </div>
@@ -66,7 +66,7 @@
         <br>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <p><b>Massage Therapy at Zara Therapy Clinic</b></p>
+                <p><b>4. Massage Therapy at Zara Therapy Clinic</b></p>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <video class="video" src="images/medicalAid/massage/the Benefits of Massage Therapy.mp4" controls></video>
@@ -74,6 +74,7 @@
         </div>
     
     </div>
+</div>
 </body>
 
 </html>

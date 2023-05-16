@@ -30,7 +30,7 @@
     <div class="container" ng-controller="myController2">
 
         <div>
-            <h1>OSTEOPATHY</h1>
+            <h2>OSTEOPATHY</h2>
         </div>
         <p><b>1. What is Osteopathy?</b></p>
         <div class="row">
@@ -44,7 +44,7 @@
         <br>
         <div class="row">
             <div ng-repeat="x in myData" class="text1 col-lg-12 col-md-12 col-sm-12">
-                <div class="">{{x.osteopathy2}}</div>
+                <div class="indent">{{x.osteopathy2}}</div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <img class="img2" src="images/beatiAid/osteopathy/OSTEOPATHY2.png" alt="">
@@ -122,10 +122,10 @@
         </ul>
         <div class=" row">
             <div class="col-lg-12 col-md-12 col-sm-12" ng-repeat="x in myData">
-                <div>{{x.osteopathy9}}</div>
+                <div> {{x.osteopathy9}}</div> <br>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12" ng-repeat="x in myData">
-                <div>{{x.osteopathy10}}</div>
+                <div class="indent">{{x.osteopathy10}}</div>
             </div>
         </div>
     </div>

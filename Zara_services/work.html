@@ -26,14 +26,14 @@
 
 <body ng-app="myApp">
     <div class="container" ng-controller="myController5">
-        <div><h1>WORK INJURIES AND CAR ACCIDENT INJURIES</h1></div>
+        <div><h2>WORK INJURIES AND CAR ACCIDENT INJURIES</h2></div>
     
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <p><b>Private property</b></p>
+                <div><b>1. Private property</b></div>
             </div>
             <div ng-repeat="x in myData" class="col-lg-12 col-md-12 col-sm-12">
-                <div>{{x.work1}}</div>
+                <div >{{x.work1}}</div>
             </div>
         </div>
     
@@ -42,7 +42,7 @@
                 <img class="img1" src="images/technique/work/WORK_INJURIES.png" alt="">
             </div>
             <div ng-repeat="x in myData" class="col-lg-8 col-md-12 col-sm-12">
-                <p><b class="b1">What to do if a fall occurs on private property?</b></p>
+                <div><b class="b1">2. What to do if a fall occurs on private property?</b></div>
                 <div>{{x.work2}}</div>
                 <div>{{x.work3}}</div>
                 <div>{{x.work4}}</div>
@@ -56,16 +56,16 @@
                 <img class="img1" src="images/technique/work/WORK_INJURIES1.png" alt=""> 
             </div>
             <div ng-repeat="x in myData" class="text1 col-lg-12 col-md-12 col-sm-12">
-                <br>
-                <div>{{x.work7}}</div>
+                
+                <div><br>{{x.work7}}</div>
             </div>
         </div>
     
         <div class="row">
-            <p><b>What are the Therapy benefits?</b></p>
+            <div><b>3. What are the Therapy benefits?</b></div>
             <div class="text2 col-lg-6 col-md-12 col-sm-12">
                 <div ng-repeat="x in myData" >
-                    <div>{{x.work7}}</div>
+                    <div >{{x.work7}}</div>
                     <ul>
                         <li>
                             Relieve Your Pain   
