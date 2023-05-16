@@ -1,0 +1,68 @@
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+p{  
+    text-align: justify;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.img1{
+    padding-top: 20px;
+    width: 1220px;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+p{  
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.img2{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.text1{
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.a{
+    padding-top:20px ;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.a-a1{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div{
+    display: block;
+    text-align: justify;
+}
+.indent{
+    text-indent: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
