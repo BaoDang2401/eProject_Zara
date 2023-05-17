@@ -11,19 +11,19 @@ $(document).ready(function () {
     $('#fullnameOutput').text(fullname);
 
     if (checkExistingUser(phone)) {
-      $('#message').text('Username does not exist. Kindly input your username again.');
+      $('#message').text('Phone does not exist. Kindly input your phone again.').css('color', 'red');
       return;
     }
     if (password !== cfpassword){
       
-      $('#message').text('Password and confirm password are not match.');
+      $('#message').text('Password and confirm password are not match.').css('color', 'red');
       return;
     }
     saveUser(phone, password, fullname);
 
     $('#phone').val('');
     $('#password').val('');
-    $('#message').text('Register successfully! Please login to continue.');
+    $('#message').text('Register successfully! Please login to continue.').css('color', 'green');
   });
 
   $('#loginForm').submit(function (event) {
@@ -33,12 +33,12 @@ $(document).ready(function () {
     var password = $('#loginPassword').val();
 
     if (!checkExistingUser(phone)) {
-      $('#message2').text('Username does not exist. Please check again!');
+      $('#message2').text('Username does not exist. Please check again!').css('color', 'red');
       return;
     }
 
     if (!checkPassword(phone, password)) {
-      $('#message2').text('Password is not correct. Please check again!');
+      $('#message2').text('Password is not correct. Please check again!').css('color', 'red');
       return;
     }
     $('#message2').text('Login successfully!');
