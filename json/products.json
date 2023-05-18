@@ -1,0 +1,139 @@
+{
+    "product": [
+      {
+        "name": "Sphygmomanometer",
+        "name2": "Sphygmomanometer",
+        "price": 29.99,
+        "image": "img/img-product/helpingMachince-page2/Sphygmomanometer-hover.jpg",
+        "imagehover": "img/img-product/helpingMachince-page2/Sphygmomanometer.jpg",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/helpingMachince-page2/Sphygmomanometer/Sphygmomanometer-001.jpg",
+            "img/img-product/helpingMachince-page2/Sphygmomanometer/Sphygmomanometer-002.jpg",
+            "img/img-product/helpingMachince-page2/Sphygmomanometer/Sphygmomanometer-003.jpg",
+            "img/img-product/helpingMachince-page2/Sphygmomanometer/Sphygmomanometer-004.jpg",
+            "img/img-product/helpingMachince-page2/Sphygmomanometer/Sphygmomanometer-005.jpg"
+          ]
+
+      },
+      {
+        "name": "MassageMachine",
+        "name2": "Massage Machine",
+        "price": 29.99,
+        "image": "img/img-product/helpingMachince-page2/MassageMachine-hover.jpg",
+        "imagehover": "img/img-product/helpingMachince-page2/MassageMachine.jpg",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/helpingMachince-page2/MassageMachine/MassageMachine-01.jpg",
+            "img/img-product/helpingMachince-page2/MassageMachine/MassageMachine-02.jpg",
+            "img/img-product/helpingMachince-page2/MassageMachine/MassageMachine-03.jpg",
+            "img/img-product/helpingMachince-page2/MassageMachine/MassageMachine-04.jpg",
+            "img/img-product/helpingMachince-page2/MassageMachine/MassageMachine-05.jpg"
+          ]
+
+      },
+      {
+        "name": "HearingAids",
+        "name2": "Hearing Aids",
+        "price": 29.99,
+        "image": "img/img-product/helpingMachince-page2/HearingAids-hover.jpg",
+        "imagehover": "img/img-product/helpingMachince-page2/HearingAids.jpg",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/helpingMachince-page2/HearingAids/HearingAids-01.jpg",
+            "img/img-product/helpingMachince-page2/HearingAids/HearingAids-02.jpg",
+            "img/img-product/helpingMachince-page2/HearingAids/HearingAids-03.jpg",
+            "img/img-product/helpingMachince-page2/HearingAids/HearingAids-04.jpg",
+            "img/img-product/helpingMachince-page2/HearingAids/HearingAids-05.jpg"
+          ]
+
+      },
+      {
+        "name": "FingerPulseOximeterOxyge",
+        "name2": "Finger Pulse Oximeter",
+        "price": 29.99,
+        "image": "img/img-product/helpingMachince-page2/FingerPulseOximeterOxyge-hover.jpg",
+        "imagehover": "img/img-product/helpingMachince-page2/FingerPulseOximeterOxyge.jpg",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/helpingMachince-page2/FingerPulseOximeterOxyge/FingerPulseOximeterOxyge-01.jpg",
+            "img/img-product/helpingMachince-page2/FingerPulseOximeterOxyge/FingerPulseOximeterOxyge-02.jpg",
+            "img/img-product/helpingMachince-page2/FingerPulseOximeterOxyge/FingerPulseOximeterOxyge-03.jpg",
+            "img/img-product/helpingMachince-page2/FingerPulseOximeterOxyge/FingerPulseOximeterOxyge-04.jpg",
+            "img/img-product/helpingMachince-page2/FingerPulseOximeterOxyge/FingerPulseOximeterOxyge-05.jpg"
+          ]
+
+      },
+      {
+        "name": "Thermometer",
+        "name2": "Thermometer",
+
+        "price": 29.99,
+        "image": "img/img-product/helpingMachince-page2/non-contactthermometer-hover.jpg",
+        "imagehover": "img/img-product/helpingMachince-page2/non-contactthermometer.jpg",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/helpingMachince-page2/non-contactthermometer/non-contactthermometer-01.jpg",
+            "img/img-product/helpingMachince-page2/non-contactthermometer/non-contactthermometer-02.jpg",
+            "img/img-product/helpingMachince-page2/non-contactthermometer/non-contactthermometer-03.jpg",
+            "img/img-product/helpingMachince-page2/non-contactthermometer/non-contactthermometer-04.jpg",
+            "img/img-product/helpingMachince-page2/non-contactthermometer/non-contactthermometer-05.jpg"
+          ]
+
+      },
+      {
+        "name": "BloodGlucoseMeter",
+        "name2": "Blood glucose meter",
+        "price": 29.99,
+        "image": "img/img-product/helpingMachince-page2/BloodGlucoseMeter-hover.jpg",
+        "imagehover": "img/img-product/helpingMachince-page2/BloodGlucoseMeter.jpg",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/helpingMachince-page2/BloodGlucoseMeter/BloodGlucoseMeter-01.jpg",
+            "img/img-product/helpingMachince-page2/BloodGlucoseMeter/BloodGlucoseMeter-02.jpg",
+            "img/img-product/helpingMachince-page2/BloodGlucoseMeter/BloodGlucoseMeter-03.jpg",
+            "img/img-product/helpingMachince-page2/BloodGlucoseMeter/BloodGlucoseMeter-04.jpg",
+            "img/img-product/helpingMachince-page2/BloodGlucoseMeter/BloodGlucoseMeter-05.jpg"
+          ]
+
+      }
+      
+    ]
+  }
+  

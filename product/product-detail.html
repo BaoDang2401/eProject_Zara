@@ -1,0 +1,50 @@
+<div class="container-xxl pt-5 pb-5">
+    <div class="container" ng-controller="ProductDetailController">
+        <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <img id="product-image" ng-src="{{ product.image }}" alt="Product Image" class="product-image">
+            </div>
+          </div>
+          <div class="col-lg-12 text-center thumbnail-images">
+            <img class="thumbnail" ng-repeat="thumbnail in product.thumbnails" ng-src="{{thumbnail}}" alt="Thumbnail" ng-click="selectThumbnail(thumbnail)">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <a href="#!helping" style="color:#303030"><p class="fs-3" style="font-size:15px!important">Home / {{ product.name2 }}</p></a>
+          <h2>{{product.name2}}</h2>
+          <div class="stars" style="font-size:15px">
+            <i class="fa-solid fa-star products-icon"></i>
+            <i class="fa-solid fa-star products-icon"></i>
+            <i class="fa-solid fa-star products-icon"></i>
+            <i class="fa-solid fa-star products-icon"></i>
+            <i class="fa-regular fa-star products-icon"></i>
+          </div>
+          <h5>Old Price: <span style="color:red"><strike>${{product.oldprice}}</strike></span> </h5>
+          <h5>New Price: <span style="color:#0089DB">${{product.price}}</span></h5>
+
+          <ul>
+            <li><span style="font-weight: bold;">Color : </span> {{ product.color }}</li>
+            <li><span style="font-weight: bold;">Available : </span> {{ product.available }}</li>
+            <li><span style="font-weight: bold;">Category : </span> {{ product.category }}</li>
+            <li><span style="font-weight: bold;">Shiping Area : </span> {{ product.shiping }}</li>
+          </ul>
+  
+          <div class="input-group">
+            <input type="number" id="quantity" class="form-control" value="1" style="max-width: 100px; border-radius: 10px;">
+            <button class="btn btn-primary mx-3" style="border-radius: 10px;">Add to Cart</button>
+          </div>
+  
+
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-12">
+              <h3>About</h3>
+              <p>{{product.about}}</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  

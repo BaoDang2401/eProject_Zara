@@ -1,0 +1,138 @@
+{
+    "essential": [
+      {
+        "name": "OraganicPeppermint",
+        "name2": "Oraganic Peppermint",
+        "price": 29.99,
+        "image": "img/img-product/Essential-oils-page2/OraganicPeppermint.png",
+        "imagehover": "img/img-product/Essential-oils-page2/OraganicPeppermint-hover.png",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+          "img/img-product/Essential-oils-page2/OraganicPepper/OraganicPepper-01.jpg",
+          "img/img-product/Essential-oils-page2/OraganicPepper/OraganicPepper-02.jpg",
+          "img/img-product/Essential-oils-page2/OraganicPepper/OraganicPepper-03.jpg",
+          "img/img-product/Essential-oils-page2/OraganicPepper/OraganicPepper-04.jpg",
+          "img/img-product/Essential-oils-page2/OraganicPepper/OraganicPepper-05.jpg"
+          ]
+
+      },
+      {
+        "name": "Lemon",
+        "name2": "Lemon",
+        "price": 29.99,
+        "image": "img/img-product/Essential-oils-page2/lemon.png",
+        "imagehover": "img/img-product/Essential-oils-page2/lemon-hover.png",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/Essential-oils-page2/Lemon/lemon-01.jpg",
+            "img/img-product/Essential-oils-page2/Lemon/lemon-02.jpg",
+            "img/img-product/Essential-oils-page2/Lemon/lemon-03.jpg",
+            "img/img-product/Essential-oils-page2/Lemon/lemon-04.jpg",
+            "img/img-product/Essential-oils-page2/Lemon/lemon-05.jpg"
+          ]
+
+      },
+      {
+        "name": "Lavender",
+        "name2": "Lavender",
+        "price": 29.99,
+        "image": "img/img-product/Essential-oils-page2/Lavender.png",
+        "imagehover": "img/img-product/Essential-oils-page2/Lavender-hover.png",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/Essential-oils-page2/Lavender/lavender-01.jpg",
+            "img/img-product/Essential-oils-page2/Lavender/lavender-02.jpg",
+            "img/img-product/Essential-oils-page2/Lavender/lavender-03.jpg",
+            "img/img-product/Essential-oils-page2/Lavender/lavender-04.jpg",
+            "img/img-product/Essential-oils-page2/Lavender/lavender-05.jpg"
+          ]
+
+      },
+      {
+        "name": "ImmuneAid",
+        "name2": "Immune Aid",
+        "price": 29.99,
+        "image": "img/img-product/Essential-oils-page2/ImmuneAid.png",
+        "imagehover": "img/img-product/Essential-oils-page2/ImmuneAid-hover.png",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/Essential-oils-page2/ImmuneAid/ImmuneAid-01.jpg",
+            "img/img-product/Essential-oils-page2/ImmuneAid/ImmuneAid-02.jpg",
+            "img/img-product/Essential-oils-page2/ImmuneAid/ImmuneAid-03.jpg",
+            "img/img-product/Essential-oils-page2/ImmuneAid/ImmuneAid-04.jpg",
+            "img/img-product/Essential-oils-page2/ImmuneAid/ImmuneAid-05.jpg"
+          ]
+
+      },
+      {
+        "name": "GermFighter",
+        "name2": "GermFighter",
+        "price": 29.99,
+        "image": "img/img-product/Essential-oils-page2/GermFighter.png",
+        "imagehover": "img/img-product/Essential-oils-page2/GermFighter-hover.png",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/Essential-oils-page2/GermFighter/GermFighter-01.jpg",
+            "img/img-product/Essential-oils-page2/GermFighter/GermFighter-02.jpg",
+            "img/img-product/Essential-oils-page2/GermFighter/GermFighter-03.jpg",
+            "img/img-product/Essential-oils-page2/GermFighter/GermFighter-04.jpg",
+            "img/img-product/Essential-oils-page2/GermFighter/GermFighter-05.jpg"
+          ]
+
+      },
+      {
+        "name": "ClarySage",
+        "name2": "ClarySage",
+        "price": 29.99,
+        "image": "img/img-product/Essential-oils-page2/ClarySage.png",
+        "imagehover": "img/img-product/Essential-oils-page2/ClarySage-hover.png",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/Essential-oils-page2/Clary-Sage/Clary-Sage-01.jpg",
+            "img/img-product/Essential-oils-page2/Clary-Sage/Clary-Sage-02.jpg",
+            "img/img-product/Essential-oils-page2/Clary-Sage/Clary-Sage-03.jpg",
+            "img/img-product/Essential-oils-page2/Clary-Sage/Clary-Sage-04.jpg",
+            "img/img-product/Essential-oils-page2/Clary-Sage/Clary-Sage-05.jpg"
+          ]
+
+      }
+
+    ]
+  }
+  

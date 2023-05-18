@@ -14,11 +14,11 @@ function Submitcontact() {
     // Kiểm tra xem ngày, thời gian, tên, email và tin nhắn có được nhập hay không
     var hasError = false;
     if (date === "") {
-        document.getElementById("dateError").innerHTML = "Please select a date.";
+        document.getElementById("dateError").innerHTML = "Please choose one date.";
         hasError = true;
     }
     if (time === "") {
-        document.getElementById("timeError").innerHTML = "Please select a time.";
+        document.getElementById("timeError").innerHTML = "Please choose your time.";
         hasError = true;
     }
     if (name === "") {

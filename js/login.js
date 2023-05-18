@@ -10,7 +10,7 @@ $(document).ready(function() {
     $('#fullnameOutput').text(fullname);
 
     if (checkExistingUser(username)) {
-      $('#message').text('Tên người dùng đã tồn tại. Vui lòng chọn tên người dùng khác.');
+      $('#message').text('Username is already existed. Please choose another username.');
       return;
     }
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     $('#username').val('');
     $('#password').val('');
-    $('#message').text('Đăng kí thành công! Vui lòng đăng nhập để tiếp tục.');
+    $('#message').text('Register successfully! Please login to continue.');
   });
 
   $('#loginForm').submit(function(event) {
@@ -28,15 +28,15 @@ $(document).ready(function() {
     var password = $('#loginPassword').val();
 
     if (!checkExistingUser(username)) {
-      $('#message2').text('Tên người dùng không tồn tại. Vui lòng kiểm tra lại.');
+      $('#message2').text('Username does not exist. Please check again!');
       return;
     }
 
     if (!checkPassword(username, password)) {
-      $('#message2').text('Mật khẩu không đúng. Vui lòng kiểm tra lại.');
+      $('#message2').text('Password is not correct. Please check again!');
       return;
     }
-    $('#message2').text('Đăng nhập thành công!');
+    $('#message2').text('Login successfully!');
 
     saveLoggedInUser(username);
     showLoggedInUser(username);

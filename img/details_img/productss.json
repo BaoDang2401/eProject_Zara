@@ -1,0 +1,17 @@
+{
+    "Sphygmomanometer":
+    [
+        {
+            "Name":"Sphygmomanometer",
+            "Old_price":"$200.00",
+            "New_price":"$155.00 (23%)",
+            "About_Sphygmomanometer1":"CLINICALLY ACCURATE TALKING BLOOD PRESSURE MONITOR, for at home, or on the go for easy to read accurate readings.",
+            "About_Sphygmomanometer2":"Sphygmomanometer to help identify arrhythmias or palpitations by instantly comparing measurements to internationally established standards for home blood pressure use by using the Visual BP Guide.",
+            "About_Sphygmomanometer3":"PRODUCT SPECS: Includes 1 standard adult wrist blood pressure cuff measuring 5.3”-8.5” and hard protective case. Batteries Included",
+            "Color":"black",
+            "Available":"In stock",
+            "Category":"Category",
+            "Shiping_Area":"All over the world"      
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+<p class="fs-1 text-center product-title">OUR PRODUCT</p>
+<div class="container pb-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-4 col-sm-6 pt-3 pb-3 d-flex justify-content-center" ng-repeat="accessorie in accessories">
+        <div class="product-card ">
+          <a ng-href="#!/accessories/{{accessorie.name}}">
+            <div class="logo-cart">
+              <!--<img src="images/logo.jpg" alt="logo">-->
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <div class="main-images">
+              <img class="default-image" src="{{ accessorie.image }}" alt="{{ accessorie.name }}">
+
+              <img class="hover-image" src="{{ accessorie.imagehover }}" alt="{{ accessorie.name }}">
+            </div>
+            <div class="products-details text-center">
+              <span class="product-name">{{ accessorie.name2 }}</span>
+
+              <div class="stars text-center" style="font-size:15px">
+                <i class="fa-solid fa-star products-icon"></i>
+                <i class="fa-solid fa-star products-icon"></i>
+                <i class="fa-solid fa-star products-icon"></i>
+                <i class="fa-solid fa-star products-icon"></i>
+                <i class="fa-regular fa-star products-icon"></i>
+              </div>
+            </div>
+            <div class="products-price">
+              <div class="price">
+                <span class="price_num">${{ accessorie.price }}</span>
+                <span class="price_old"><strike>${{ accessorie.oldprice }}</strike></span>
+              </div>
+            </div>
+          </a>
+          <div class="button">
+            <div class="button-layer"></div>
+            <button>Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

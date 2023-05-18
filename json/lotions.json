@@ -1,0 +1,138 @@
+{
+    "lotion": [
+      {
+        "name": "AlphaLotion",
+        "name2": "AlphaLotion",
+        "price": 29.99,
+        "image": "img/img-product/Lotion-page2/AlphaLotion.jpg",
+        "imagehover": "img/img-product/Lotion-page2/AlphaLotion-hover.jpg",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/Lotion-page2/AlphaLotion/alpha-lotion-01.jpg",
+            "img/img-product/Lotion-page2/AlphaLotion/alpha-lotion-02.jpg",
+            "img/img-product/Lotion-page2/AlphaLotion/alpha-lotion-03.jpg",
+            "img/img-product/Lotion-page2/AlphaLotion/alpha-lotion-04.jpg",
+            "img/img-product/Lotion-page2/AlphaLotion/alpha-lotion-05.jpg"
+          ]
+
+      },
+
+      {
+        "name": "Dove",
+        "name2": "Dove",
+        "price": 29.99,
+        "image": "img/img-product/Lotion-page2/dove.jpg",
+        "imagehover": "img/img-product/Lotion-page2/dove-hover.jpg",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/Lotion-page2/Dove/dove-01.jpg",
+            "img/img-product/Lotion-page2/Dove/dove-02.jpg",
+            "img/img-product/Lotion-page2/Dove/dove-03.jpg",
+            "img/img-product/Lotion-page2/Dove/dove-04.jpg",
+            "img/img-product/Lotion-page2/Dove/dove-05.jpg"
+          ]
+
+      },
+      {
+        "name": "Cetaphil",
+        "name2": "Cetaphil",
+        "price": 29.99,
+        "image": "img/img-product/Lotion-page2/Cetaphil.jpg",
+        "imagehover": "img/img-product/Lotion-page2/Cetaphil-hover.jpg",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/Lotion-page2/Cetaphil/Cetaphil-01.jpg",
+            "img/img-product/Lotion-page2/Cetaphil/Cetaphil-02.jpg",
+            "img/img-product/Lotion-page2/Cetaphil/Cetaphil-03.jpg",
+            "img/img-product/Lotion-page2/Cetaphil/Cetaphil-04.jpg",
+            "img/img-product/Lotion-page2/Cetaphil/Cetaphil-05.jpg"
+          ]
+
+      },
+      {
+        "name": "Forpro",
+        "name2": "Forpro",
+        "price": 29.99,
+        "image": "img/img-product/Lotion-page2/forpro.jpg",
+        "imagehover": "img/img-product/Lotion-page2/forpro-hover.jpg",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/Lotion-page2/forpro/forpro-01.jpg",
+            "img/img-product/Lotion-page2/forpro/forpro-02.jpg",
+            "img/img-product/Lotion-page2/forpro/forpro-03.jpg",
+            "img/img-product/Lotion-page2/forpro/forpro-04.jpg",
+            "img/img-product/Lotion-page2/forpro/forpro-05.jpg"
+          ]
+
+      },
+      {
+        "name": "Nivea",
+        "name2": "Nivea",
+        "price": 29.99,
+        "image": "img/img-product/Lotion-page2/nivea.jpg",
+        "imagehover": "img/img-product/Lotion-page2/nivea-hover.jpg",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/Lotion-page2/nivea/nivea-001.jpg",
+            "img/img-product/Lotion-page2/nivea/nivea-002.jpg",
+            "img/img-product/Lotion-page2/nivea/nivea-003.jpg",
+            "img/img-product/Lotion-page2/nivea/nivea-004.jpg",
+            "img/img-product/Lotion-page2/nivea/nivea-005.jpg"
+          ]
+
+      },
+      {
+        "name": "Johnson's",
+        "name2": "Johnson's",
+        "price": 29.99,
+        "image": "img/img-product/Lotion-page2/johnson.jpg",
+        "imagehover": "img/img-product/Lotion-page2/johnson-hover.png",
+        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "quantity": "100",
+        "color": "black",
+        "available": "In stock",
+        "category": "Category",
+        "shiping": "All over the world",
+        "oldprice": 99.99,
+        "thumbnails": [
+            "img/img-product/Lotion-page2/johnson/johnson-001.jpg",
+            "img/img-product/Lotion-page2/johnson/johnson-002.jpg",
+            "img/img-product/Lotion-page2/johnson/johnson-003.jpg",
+            "img/img-product/Lotion-page2/johnson/johnson-004.jpg",
+            "img/img-product/Lotion-page2/johnson/johnson-005.jpg"
+          ]
+
+      }
+    ]
+  }
+  
