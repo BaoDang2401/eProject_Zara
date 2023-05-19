@@ -217,6 +217,7 @@ hr{
 @media screen and (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         right: 200px;
+        font-size: 15px;
     }
 }
 
@@ -264,7 +265,7 @@ hr{
 }
 .news-img {
     width: 100%;
-    padding-bottom: 5px;
+    height: 80%;
 }
 .news-title{
     font-weight: bold;
@@ -388,6 +389,7 @@ hr{
 
 /* Contact */
 .contact {
+    
     background: url("/img/services/doctors.png");
     background-size: cover;
 }
@@ -583,4 +585,9 @@ hr{
     height: 80px;
     margin-right: 5px;
     cursor: pointer;
+}
+
+input [type=search]::after{
+    border-color: var(--primary);
+    border: 1px solid;
 }
