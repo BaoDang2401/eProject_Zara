@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <script src="angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/work.css">
+    <!-- <link rel="stylesheet" href="../css/reponsive.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    
+</head>
+
+<body ng-app="myApp2">
+    <div class="container" ng-controller="myController25">
+        <div><h2>WORK INJURIES AND CAR ACCIDENT INJURIES</h2></div>
+    
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div><b>1. Private property</b></div>
+            </div>
+            <div ng-repeat="x in myData" class="col-lg-12 col-md-12 col-sm-12">
+                <div >{{x.work1}}</div>
+            </div>
+        </div>
+    
+        <div class="ter row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <img class="img1" src="images/technique/work/WORK_INJURIES.png" alt="">
+            </div>
+            <div ng-repeat="x in myData" class="col-lg-8 col-md-12 col-sm-12">
+                <div><b class="b1">2. What to do if a fall occurs on private property?</b></div>
+                <div>{{x.work2}}</div>
+                <div>{{x.work3}}</div>
+                <div>{{x.work4}}</div>
+                <div>{{x.work5}}</div>
+                <div>{{x.work6}}</div>
+            </div>
+        </div>
+    
+        <div class="ter row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <img class="img1" src="images/technique/work/WORK_INJURIES1.png" alt=""> 
+            </div>
+            <div ng-repeat="x in myData" class="text1 col-lg-12 col-md-12 col-sm-12">
+                
+                <div><br>{{x.work7}}</div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div><b>3. What are the Therapy benefits?</b></div>
+            <div class="text2 col-lg-6 col-md-12 col-sm-12">
+                <div ng-repeat="x in myData" >
+                    <div >{{x.work7}}</div>
+                    <ul>
+                        <li>
+                            Relieve Your Pain   
+                        </li>
+                        <li>
+                            Strengthen & Flexibility
+                        </li>
+                        <li>
+                            Improve Your Functional Abilities
+                        </li>
+                        <li>
+                            Coordinate Your Return To Work
+                        </li>
+                        <li>
+                            Provide Ergonomic Advice
+                        </li>
+                        <li>
+                            Provide Workplace Injury Prevention
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text1 col-lg-6 col-md-12 col-sm-12">
+                <img class="img2" src="images/technique/work/WORK_INJURIES2.png" alt="">
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.img_top{
+    height: 100%;
+    width: 100%;
+}
+h3{
+    text-align: center;
+
+}
+hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    color: #0089DB;
+    border-radius: 30px;
+    border: 3px solid;
+}
+.p{
+    text-align: center;
+}
+.box{
+    height: 100%;
+    background-color: #F3F3F3;
+    padding: 20px;
+}
+.ggmap{
+    height: 300px;
+    width: 100%;
+}

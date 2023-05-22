@@ -1,0 +1,49 @@
+<p class="fs-1 text-center product-title">OUR PRODUCT</p>
+
+<div class="container pb-5">
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 pt-3 pb-3 d-flex justify-content-center" ng-repeat="product in products">
+          <div class="product-card ">
+              <a href="#!demo1">
+                <div class="logo-cart">
+                  <!--<img src="images/logo.jpg" alt="logo">-->
+                  <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="main-images">
+                  <img class="default-image" src="{{ product.image }}" alt="{{ product.name }}">
+                  
+                  <img class="hover-image" src="{{ product.imagehover }}" alt="{{ product.name }}">
+                </div>
+                <div class="products-details text-center">
+                  <span class="product-name">{{ product.name }}</span>
+          
+                  <div class="stars text-center" style="font-size:15px">
+                    <i class="fa-solid fa-star products-icon"></i>
+                    <i class="fa-solid fa-star products-icon"></i>
+                    <i class="fa-solid fa-star products-icon"></i>
+                    <i class="fa-solid fa-star products-icon"></i>
+                    <i class="fa-regular fa-star products-icon"></i>                      
+                  </div>
+                </div>
+                <div class="products-price">
+                  <div class="price">
+                    <span class="price_num">${{ product.price }}</span>
+                    <span class="price_old"><strike>${{ product.oldprice }}</strike></span>
+                  </div>
+                </div>
+              </a>
+              <div class="button">
+                <div class="button-layer"></div>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </div>
+          
+          
+
+          
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.BG{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+.img_detail{
+    height: 100%;
+    width: 100%;
+}
+.indent{
+    text-indent: 40px;
+}
+
+.span-font-weight{
+    font-weight: bold;
+}

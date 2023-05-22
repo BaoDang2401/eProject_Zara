@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/massage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</head>
+
+<body ng-app="myApp2">
+    
+    <div class="container" ng-controller="myController21">
+    <div class="all">
+        <div>
+            <h2>MASSAGE THERAPY</h2>
+        </div>
+
+        <div class="row">
+            <p><b> 1. Overview</b></p>
+    
+            <div ng-repeat="x in myData" class="col-lg-6 col-md-12 col-sm-12">
+                <div>{{x.massage1}}</div> <br>
+                <div>{{x.massage2}}</div>
+                <div>
+                    <p class="x1"><b>2. Studies of massage benefits have found massage can:</b></p>
+                    <ul>
+                        <li>Help reduce stress.</li>
+                        <li>Lessen pain and muscle tightness.</li>
+                        <li>Increase relaxation.</li>
+                        <li>Improve the work of the immune system.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <img class="img1" src="images/medicalAid/massage/massage1.png" alt="">
+            </div>
+    
+        </div>
+        <div ng-repeat="x in myData" class="a2">
+            <div>{{x.massage3}}</div>
+        </div>
+        <br>
+        <div class="row">
+            <p><b>3. Can massage therapy be helpful for people with HIV/AIDS?</b></p>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <img class="img2" src="images/medicalAid/massage/massage2.png" alt="">
+            </div>
+            <div ng-repeat="x in myData" class="col-lg-8 col-md-12 col-sm-12">
+                <div >{{x.massage4}}</div> <br>
+                <div>{{x.massage5}}</div> <br>
+                <div>{{x.massage6}}</div> <br>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <p><b>4. Massage Therapy at Zara Therapy Clinic</b></p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <video class="video" src="images/medicalAid/massage/the Benefits of Massage Therapy.mp4" controls></video>
+            </div>
+        </div>
+    
+    </div>
+</div>
+</body>
+
+</html>

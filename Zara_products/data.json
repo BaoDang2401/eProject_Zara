@@ -1,0 +1,13 @@
+{
+    "productName": "Product Name",
+    "description": "day la phan gioi thieu.",
+    "price": "$99.99",
+    "about": "ABCXYZ",
+    "image": "pic1.png",
+    "thumbnails": [
+      "pic1.png",
+      "pic2.png",
+      "pic3.png"
+    ]
+  }
+  

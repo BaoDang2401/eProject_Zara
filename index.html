@@ -72,15 +72,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarCollapse">
-                    <div class="navbar-nav" id="menu">
+                    <div class="navbar-nav">
                         <a href="/" class="nav-item nav-link active">Home</a>
                         <a href="#!about" class="nav-item nav-link">About us</a>
                         <div class="nav-item dropdown">
                             <a href="#services" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="/" class="dropdown-item">Technique</a>
-                                <a href="/" class="dropdown-item">Medical Aid</a>
-                                <a href="/" class="dropdown-item">Healthy Aid</a>
+                                <a href="#!chiropractic" class="dropdown-item">Chiropractic</a>
+                                <a href="#!osteopathy" class="dropdown-item">Osteopathy</a>
+                                <a href="#!physical" class="dropdown-item">Physical</a>
+                                <a href="#!work" class="dropdown-item">Work Injuries</a>
+                                <a href="#!acupuncture" class="dropdown-item">Acupuncture</a>
+                                <a href="#!massage" class="dropdown-item">Massages</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
@@ -95,14 +98,14 @@
                         <div class="nav-item dropdown">
                             <a href="#news" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">News</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="/" class="dropdown-item">Health Blog</a>
-                                <a href="/" class="dropdown-item">Testimonials</a>
-                                <a href="/" class="dropdown-item">Offer & Discounts</a>
+                                <a href="#!news" class="dropdown-item">Health Blog</a>
+                                <a href="#!feedback" class="dropdown-item">Testimonials</a>
+                               
                             </div>
                         </div>
                         
                         <a href="#booking" class="nav-item nav-link">Booking</a>
-                        <a href="#contact" class="nav-item nav-link">Contact Us</a>
+                        <a href="#!contact" class="nav-item nav-link">Contact Us</a>
                         <input class="search" type="search" placeholder=" Search" style="margin-top: 20px; margin-bottom: 20px;border-radius: 10px;">
                         <a href="#" class="nav-item nav-link px-4" id="btn-hide" data-bs-toggle="modal"
                             data-bs-target="#authModal"><i class="fa-regular fa-user"></i> Log In</a>
@@ -349,7 +352,23 @@
         app.config(function ($routeProvider) {
             $routeProvider
                 .when("/", { templateUrl: "home.html" })
-                .when("/about", { templateUrl: "about.html" })
+                .when("/about", { templateUrl: "about/about.html" })
+                .when("/feedback", { templateUrl: "Zara_feedback/feedback.html" })
+                .when("/contact", { templateUrl: "Zara_ContactUs/contact.html" })
+                .when("/news", { templateUrl: "Zara_News/news.html" })
+                .when("/news1", { templateUrl: "Zara_News/new1_detail.html" })
+                .when("/news2", { templateUrl: "Zara_News/new2_detail.html" })
+                .when("/news3", { templateUrl: "Zara_News/new3_detail.html" })
+                .when("/news4", { templateUrl: "Zara_News/new4_detail.html" })
+                .when("/news5", { templateUrl: "Zara_News/new5_detail.html" })
+                .when("/news6", { templateUrl: "Zara_News/new6_detail.html" })
+                .when("/acupuncture", { templateUrl: "Zara_services/acupuncture.html" })
+                .when("/massage", { templateUrl: "Zara_services/massage.html" })
+                .when("/services", { templateUrl: "Zara_services/service.html" })
+                .when("/chiropractic", { templateUrl: "Zara_services/chiropractic.html" })
+                .when("/osteopathy", { templateUrl: "Zara_services/osteopathy.html" })
+                .when("/physical", { templateUrl: "Zara_services/physical.html" })
+                .when("/work", { templateUrl: "Zara_services/work.html" })
                 .when("/helping", { templateUrl: "/product/products.html", controller: 'ProductController' })
                 .when("/essentials", { templateUrl: "/product/essentials.html", controller: 'EssentialController' })
                 .when("/lotions", { templateUrl: "/product/lotions.html", controller: 'LotionController' })
@@ -373,7 +392,48 @@
 
 
         });
-
+        app.controller("myController0", function ($scope, $http) {
+            $http.get("/json/service.json").then(function (response) {
+                $scope.myData = response.data.Acupuncture;
+                $scope.service = {};
+                console.log($scope.myData)
+            });
+        });
+        app.controller("myController1", function ($scope, $http) {
+            $http.get("/json/service.json").then(function (response) {
+                $scope.myData = response.data.Massage;
+                $scope.service = {};
+                console.log($scope.myData)
+            });
+        });
+        app.controller("myController2", function ($scope, $http) {
+            $http.get("/json/service.json").then(function (response) {
+                $scope.myData = response.data.osteopathy;
+                $scope.service = {};
+                console.log($scope.myData)
+            });
+        });
+        app.controller("myController3", function ($scope, $http) {
+            $http.get("/json/service.json").then(function (response) {
+                $scope.myData = response.data.chiropractic;
+                $scope.service = {};
+                console.log($scope.myData)
+            });
+        });
+        app.controller("myController4", function ($scope, $http) {
+            $http.get("/json/service.json").then(function (response) {
+                $scope.myData = response.data.physical;
+                $scope.service = {};
+                console.log($scope.myData)
+            });
+        });
+        app.controller("myController5", function ($scope, $http) {
+            $http.get("/json/service.json").then(function (response) {
+                $scope.myData = response.data.work;
+                $scope.service = {};
+                console.log($scope.myData)
+            });
+        });
         app.controller('ProductController', function ($scope, $http) {
             $http.get('/json/products.json').then(function (response) {
                 $scope.products = response.data.product;
@@ -555,6 +615,7 @@
     <script src="js/booking.js"></script>
     <script src="js/viewmore.js"></script>
     <script src="js/products.js"></script>
+    <script src="js/contact.js"></script>
 
 
 

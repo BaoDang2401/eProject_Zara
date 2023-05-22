@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Zara Therapy Clinic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script src="js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5c0abb1169.js" crossorigin="anonymous"></script>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- <script src="js/login.js"></script> -->
+    <script src="js/login-form.js"></script>
+
+
+      
+</head>
+
+<body ng-app="myApp">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+        <div class="d-flex justify-content-center nav-header">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                
+                <a href="index.html" class="navbar-brand pb-3 px-4 pt-3">
+                    <img src="img/logo_navbar.png" height="50px"
+                        alt="">
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                    <div class="navbar-nav" id="menu">
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="#!about" class="nav-item nav-link">About us</a>
+                        <div class="nav-item dropdown">
+                            <a href="#services" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="/" class="dropdown-item">Technique</a>
+                                <a href="/" class="dropdown-item">Medical Aid</a>
+                                <a href="/" class="dropdown-item">Healthy Aid</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#product" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="/" class="dropdown-item">Helping Machines</a>
+                                <a href="/" class="dropdown-item">Accessories</a>
+                                <a href="/lotions.html" class="dropdown-item">Lotions</a>
+                                <a href="/oils.html" class="dropdown-item">Essential oils</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#news" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">News</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="/" class="dropdown-item">Health Blog</a>
+                                <a href="/" class="dropdown-item">Testimonials</a>
+                            </div>
+                        </div>
+                        <a href="#offers" class="nav-item nav-link">Offer & Discounts</a>
+                        <a href="#booking" class="nav-item nav-link">Booking</a>
+                        <a href="#" class="nav-item nav-link px-4" id="btn-hide" data-bs-toggle="modal" data-bs-target="#authModal"><i class="fa-regular fa-user"></i> Log In</a>
+
+                        <div class="nav-item dropdown px-5">
+                            <a href="#" class="nav-link dropdown-toggle" id="nav-name" style="display:none;">Hello,
+                              <span id="fullnameOutput" class="text-primary"></span>
+                            </a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="#" class="dropdown-item" id="changename">Change Name</a>
+                                <a href="#" class="dropdown-item" id="changepassword">Change Password</a>
+                                <a href="/" class="dropdown-item" id="logoutLink">Log Out</a>
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Modal đổi tên -->
+    <div id="changeNameModal" class="modal fade" tabindex="-1" aria-labelledby="changeNameModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="changeNameModalLabel">Change Info</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="changeNameForm">
+                <div class="mb-3">
+                    <label for="newNameInput" class="form-label">New Name</label>
+                    <input type="text" class="form-control" id="newNameInput">
+                  </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal đổi pass -->
+      <div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="changePasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="changePasswordModalLabel">Change Password</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="changePasswordForm">
+                <div class="mb-3">
+                  <label for="newPasswordInput">New Password</label>
+                  <input type="password" class="form-control" id="newPasswordInput" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- Modal đăng kí và đăng nhập -->
+    
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="authModalLabel">Log in / Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="registerTab" data-bs-toggle="tab" href="#loginForm">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="loginTab" data-bs-toggle="tab" href="#registerForm">Register</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3">
+
+                        <div class="tab-pane fade  show active" id="loginForm">
+                            <!-- Form đăng nhập -->
+                            <form id="loginForm">
+
+                                <div class="row">
+                                <div class="col-md-6 mb-4">
+                
+                                    <div class="form-outline">
+                                        <label class="form-label" for="loginPhone">Phone</label>
+
+                                    <input type="text" id="loginPhone" name="loginPhone" class="form-control form-control-lg" />
+                                    </div>
+                
+                                </div>
+                                <div class="col-md-6 mb-4">
+                
+                                    <div class="form-outline">
+                                        <label class="form-label" for="loginPassword">Password</label>
+
+                                    <input type="password" id="loginPassword" name="loginPassword" class="form-control form-control-lg" />
+                                    </div>
+                
+                                </div>
+                                <p id="message2"></p>
+
+                                </div>
+
+                                <div style="text-align: center;">
+                                <input class="btn btn-primary" type="submit" value="Sign In" />
+                                </div>
+                
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="registerForm">
+                            <!-- Form đăng kí -->
+                            <form id="registerForm" name="myForm">
+
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                
+                                        <div class="form-outline">
+                                            <label class="form-label" for="fullname">Your Name</label>
+
+                                        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" class="form-control form-control-lg" required/>
+                                        </div>
+                    
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                
+                                        <div class="form-outline">
+                                            <label class="form-label" for="fullname">Email</label>
+
+                                        <input type="text" id="emails" name="email" placeholder="Enter your email" class="form-control form-control-lg" required/>
+                                        </div>
+                    
+                                    </div>
+                                <div class="col-md-6 mb-4">
+                
+                                    <div class="form-outline">
+                                        <label class="form-label" for="phone">Phone</label>
+
+                                    <input type="number" id="phone" name="phone" placeholder="Enter your phone" class="form-control form-control-lg" required/>
+                                    </div>
+                
+                                </div>
+                                <div class="col-md-6 mb-4">
+                
+                                    <div class="form-outline">
+                                        <label class="form-label" for="password">Password</label>
+
+                                    <input type="password" id="password" name="password" placeholder="Enter your password" class="form-control form-control-lg" required/>
+                                    </div>
+                
+                                </div>
+                                <div class="col-md-6 mb-4">
+                
+                                    <div class="form-outline">
+                                        <label class="form-label" for="password">Confirm Password</label>
+
+                                    <input type="password" id="cfpassword" name="cfpassword" placeholder="Confirm your password" class="form-control form-control-lg" required/>
+                                    </div>
+                
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="radio" name="gender" required> Male
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" name="gender" required> Female
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" name="gender" required> Other
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                <p id="message" class="mt-3"></p>
+                                <div style="text-align: center;">
+                                    <input class="btn btn-primary btn-lg" type="submit" value="Sign Up" />
+                                </div>
+                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar End -->
+
+    
+    <div ng-view></div>
+    
+  
+
+    
+    <!-- Quote Start -->
+<!-- Link to Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const thumbnailImages = document.querySelectorAll('.thumbnail');
+        const productImage = document.getElementById('product-image');
+
+        thumbnailImages.forEach(function (thumbnail) {
+            thumbnail.addEventListener('click', function () {
+                const imagePath = thumbnail.getAttribute('src');
+                productImage.setAttribute('src', imagePath);
+            });
+        });
+
+        thumbnailImages.forEach(function (thumbnail) {
+            thumbnail.addEventListener('click', function () {
+                thumbnailImages.forEach(function (thumb) {
+                    thumb.classList.remove('active');
+                });
+                thumbnail.classList.add('active');
+            });
+        });
+    });
+</script>
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/", { templateUrl: "home.html" })
+                .when("/about", { templateUrl: "about.html" })
+                .when("/products", { templateUrl: "products.html", controller: 'ProductController' })
+                .when("/demo1", { templateUrl: "products/demo1.html", controller: 'DemoController' })
+
+        });
+        angular.module('myApp').controller('DemoController', function ($scope, $http) {
+            $http.get('data.json').then(function (response) {
+                $scope.product = response.data;
+            });
+            $scope.selectThumbnail = function (thumbnail) {
+                $scope.product.image = thumbnail;
+            };
+        });
+        app.controller('ProductController', function($scope, $http) {
+            $http.get('products.json').then(function(response) {
+            $scope.products = response.data.product;
+            });
+        });
+
+ 
+
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuLinks = document.querySelectorAll("#menu a.nav-link");
+
+            for (var i = 0; i < menuLinks.length; i++) {
+                menuLinks[i].addEventListener("click", function (event) {
+                    event.preventDefault();
+                    var target = this.getAttribute("href");
+                    var offset = document.querySelector(target).offsetTop;
+                    var offset = document.querySelector(target).offsetTop - 100;
+                    window.scrollTo({
+                        top: offset,
+                        behavior: "smooth"
+                    });
+                });
+            }
+        });
+    </script>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-white footer pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-xxl">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-dark mb-4">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>294 Nam Ky Khoi Nghia Street, Ward 8,
+                        District 3, Ho Chi Minh City</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>1900.123.123</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>zaratherapyclinic@gmail.com</p>
+
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="text-dark mb-4">Services</h4>
+                    <a class="btn btn-link" href="">Technique</a>
+                    <a class="btn btn-link" href="">Medical Aid</a>
+                    <a class="btn btn-link" href="">Beauty Aid</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img style="width: 200px; height: 80px; padding-bottom: 4px;" src="img/logo_footer.png" alt="">
+                    <!-- <p class="mb-1">Zara Therapy Clinic</p> -->
+                    <p class="mb-1">Providing the best services and products without using any medicines in Vietnam.</p>
+                    <h6 class="text-dark">&copy;Copyright 2023 - Zara Therapy Clinic</h6>
+                </div>
+               
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-dark mb-4">Address</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.273125983394!2d106.6836567!3d10.790381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d34a704ab7%3A0xe4e75cbec27ea20f!2zMjk0IMSQLiBOYW0gS-G7syBLaOG7n2kgTmdoxKlhLCBQaMaw4budbmcgOCwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1683446992468!5m2!1svi!2s"
+                        width="200px" height="100px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <button class="btn btn-lg btn-primary btn-lg-square rounded-circle popup-button" data-bs-toggle="modal" data-bs-target="#contactModal">
+        <i class="fa fa-phone"></i>
+       
+      </button>
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="w-100 text-center">
+                    <h5 class="modal-title text-primary" id="contactModalLabel">Contact Hotline</h5>
+                  </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Zara Therapy Clinic Ho Chi Minh: <a href="tel:+1900123123">1900-123-123</a></p>
+                <p>Zara Therapy Clinic Ha Noi: <a href="tel:+1900123456">1900-123-456</a></p>
+                <p>Zara Therapy Clinic Da Nang: <a href="tel:+1900123789">1900-123-789</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    <!-- Start of LiveChat (www.livechat.com) code -->
+    <script>!function(s,u,b,i,z){var o,t,r,y;s[i]||(s._sbzaccid=z,s[i]=function(){s[i].q.push(arguments)},s[i].q=[],s[i]("setAccount",z),r=["widget.subiz.net","storage.googleapis"+(t=".com"),"app.sbz.workers.dev",i+"a"+(o=function(k,t){var n=t<=6?5:o(k,t-1)+o(k,t-3);return k!==t?n:n.toString(32)})(20,20)+t,i+"b"+o(30,30)+t,i+"c"+o(40,40)+t],(y=function(k){var t,n;s._subiz_init_2094850928430||r[k]&&(t=u.createElement(b),n=u.getElementsByTagName(b)[0],t.async=1,t.src="https://"+r[k]+"/sbz/app.js?accid="+z,n.parentNode.insertBefore(t,n),setTimeout(y,2e3,k+1))})(0))}(window,document,"script","subiz", "acrquwfnpwawnmljetuz")</script>
+    <!-- End of LiveChat code -->
+
+    
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/viewmore.js"></script>
+    <script src="js/products.js"></script>
+
+
+
+      
+    <!-- Template Javascript -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
