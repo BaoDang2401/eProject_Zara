@@ -147,7 +147,7 @@
             </div>
         </div>
     </div>
-    <!-- Modal đổi tên -->
+    <!-- Modal using to change names -->
     <div id="changeNameModal" class="modal fade" tabindex="-1" aria-labelledby="changeNameModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -168,7 +168,7 @@
             </div>
         </div>
     </div>
-    <!-- Modal đổi pass -->
+    <!-- Modal using to change password -->
     <div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog"
         aria-labelledby="changePasswordModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -190,7 +190,7 @@
         </div>
     </div>
 
-    <!-- Modal đăng kí và đăng nhập -->
+    <!-- Modal using to login and register -->
 
     <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -212,7 +212,7 @@
                     <div class="tab-content mt-3">
 
                         <div class="tab-pane fade  show active" id="loginForm">
-                            <!-- Form đăng nhập -->
+                            <!-- Login Form -->
                             <form id="loginForm">
 
                                 <div class="row">
@@ -247,7 +247,7 @@
                             </form>
                         </div>
                         <div class="tab-pane fade" id="registerForm">
-                            <!-- Form đăng kí -->
+                            <!-- Register Form -->
                             <form id="registerForm" name="myForm">
 
                                 <div class="row">
@@ -346,10 +346,10 @@
     <!-- Custom JavaScript -->
     <script>
         function checkoutAndCloseModal() {
-            // Thực hiện chuyển trang
+            // navigating to other pages
             window.location.href = "#!cart";
 
-            // Tắt modal
+            // shutdown modal
             var modal = document.getElementById("modalCart");
             var modalInstance = bootstrap.Modal.getInstance(modal);
             modalInstance.hide();
@@ -689,17 +689,17 @@
         app.service("CartService", function () {
             var cartItems = [];
             var cartItems = [];
-            var couponCode = ""; // Mã coupon
-            var discount = 0; // Giá trị giảm giá
+            var couponCode = ""; // code for coupon
+            var discount = 0; // discount value
             this.applyCoupon = function (code) {
-                // Kiểm tra nếu mã coupon hợp lệ
+                // checking if coupon code is valid
                 if (code === "nit") {
                     couponCode = code;
-                    discount = 0.1; // Giảm giá 10%
+                    discount = 0.1; // discount 10%
                 } else {
                     couponCode = "";
                     discount = 0;
-                    alert("Sai coupon rồi cưng")
+                    alert("Your coupon is not valid.")
                 }
             };
 
