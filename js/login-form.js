@@ -147,13 +147,19 @@ function showLoggedInUser(phone) {
   $('#navbar').show();
   $('#nav-name').show();
   $('#btn-hide').hide();
+  $('#btn-checkout').show();
+  $('#checkout-alert').hide();
+  $('#change').show();
   $('#authModal').modal('hide');
 }
 
 function showLoggedOutUser() {
   $('#loggedInUser').text('');
   $('#navbar').hide();
+  $('#checkout-alert').show();
+  $('#btn-checkout').hide();
   $('#nav-name').hide();
+  $('#change').hide();
   $('#btn-hide').show();
 }
 

@@ -1,3 +1,6 @@
+<div>
+  <img style=" width: 100%; " src="/img/product/oil-bg.png" alt="">
+</div>
 <div class="container-xxl pt-5 pb-5">
     <div class="container" ng-controller="EssentialDetailController">
         <div class="row">
@@ -32,8 +35,8 @@
           </ul>
   
           <div class="input-group">
-            <input type="number" id="quantity" class="form-control" value="1" style="max-width: 100px; border-radius: 10px;">
-            <button class="btn btn-primary mx-3" style="border-radius: 10px;">Add to Cart</button>
+            <input type="number" id="quantity" class="form-control" ng-model="quantity" style="max-width: 100px; border-radius: 10px;">
+            <button data-name="{{ essential.name2 }}" ng-click="addToCart(essential)" class="btn btn-primary mx-3" style="border-radius: 10px;">Add to Cart</button>
           </div>
   
 
@@ -47,4 +50,4 @@
       </div>
     </div>
   </div>
-  
+  <hr>

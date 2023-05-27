@@ -24,6 +24,12 @@ hr{
     border: 1px solid var(--primary);
     border-radius: 20px;
 }
+.btn-primary{
+    background-color: var(--primary);
+}
+.btn-primary:hover{
+    background-color: #017dc4;
+}
 /* config màu dễ dàng thay đổi hơn */
 
 .back-to-top {
@@ -174,7 +180,7 @@ hr{
 
 .footer .btn.btn-link {
     display: block;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     padding: 0;
     text-align: left;
     color: #000000;
@@ -387,7 +393,7 @@ hr{
 }
 
 
-/* Contact */
+/* booking */
 .booking {
     
     background: url("/img/services/doctors.png");
@@ -590,4 +596,14 @@ hr{
 input [type=search]::after{
     border-color: var(--primary);
     border: 1px solid;
+}
+.cart-dropdown{
+    background-color: #ffffff;
+    border-style: solid;
+}
+.view-online{
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
 }

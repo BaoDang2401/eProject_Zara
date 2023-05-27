@@ -1,4 +1,6 @@
-<p class="fs-1 text-center product-title">OUR PRODUCT</p>
+<div>
+  <img style=" width: 100%; " src="/img/product/ourproducts-bg.png" alt="">
+</div>
 <div class="container pb-5">
   <div class="container">
     <div class="row justify-content-center">
@@ -34,10 +36,11 @@
           </a>
           <div class="button">
             <div class="button-layer"></div>
-            <button>Add to cart</button>
+            <button data-name="{{ essential.name2 }}" ng-click="addToCart(essential)">Add to cart</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<hr>
