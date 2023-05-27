@@ -3,7 +3,7 @@
       {
         "name": "OraganicPeppermint",
         "name2": "Oraganic Peppermint",
-        "price": 29.99,
+        "price": 9.99,
         "image": "img/img-product/Essential-oils-page2/OraganicPeppermint.png",
         "imagehover": "img/img-product/Essential-oils-page2/OraganicPeppermint-hover.png",
         "about": "Nurture Your Spirit: Add a few drops of our peppermint oil in your diffuser to unleash its fresh, cool and minty scent promoting energy, focus and mental alertness. Its menthol content has a revitalizing effect on the skin. Add it to carrier oils to help relieve sore muscles, tension and discomfort.",
@@ -16,7 +16,7 @@
         "category": "Category",
         "shiping": "All over the world",
         "shipping": "Free",
-        "oldprice": 129.99,
+        "oldprice": 10.99,
         "thumbnails": [
           "img/img-product/Essential-oils-page2/OraganicPepper/OraganicPepper-01.jpg",
           "img/img-product/Essential-oils-page2/OraganicPepper/OraganicPepper-02.jpg",
@@ -29,7 +29,7 @@
       {
         "name": "Lemon",
         "name2": "Lemon",
-        "price": 29.99,
+        "price": 9.99,
         "image": "img/img-product/Essential-oils-page2/lemon.png",
         "imagehover": "img/img-product/Essential-oils-page2/lemon-hover.png",
         "about": "With Lemon, everyday can be the first day of spring. Its crisp, citrus-fresh aroma brings to mind sunshine and your favorite household cleaning products — just without the chemicals. Lemon can uplift sullen moods and inspire a positive outlook with its bright aromatic notes. Sourced from Italy, this essential oil might just add a romantic touch to your air when diffused. Or, when life takes you on the road, enjoy Lemon through a personal inhaler.",
@@ -42,7 +42,7 @@
         "category": "Category",
         "shiping": "All over the world",
         "shipping": "Free",
-        "oldprice": 99.99,
+        "oldprice": 10.99,
         "thumbnails": [
             "img/img-product/Essential-oils-page2/Lemon/lemon-01.jpg",
             "img/img-product/Essential-oils-page2/Lemon/lemon-02.jpg",
@@ -55,7 +55,7 @@
       {
         "name": "Lavender",
         "name2": "Lavender",
-        "price": 29.99,
+        "price": 9.99,
         "image": "img/img-product/Essential-oils-page2/Lavender.png",
         "imagehover": "img/img-product/Essential-oils-page2/Lavender-hover.png",
         "about": "CALMING AND RELAXING: Lavender oil is ultra-versatile and loaded with benefits. That's probably why it's one the most popular and widely used essential oils. Diffuse a few drops at night to create a warm, calm atmosphere that is perfect for sleeping and relaxation. IDEAL FOR NATURAL SKIN CARE: Dilute 2-5% of Lavender in a carrier oil of your choice. It can help with skin issues like fine lines, wrinkles, and chapped lips. Create a natural hair tonic using Pure Lavender to stimulate hair growth and battle itchy dandruff.",
@@ -68,7 +68,7 @@
         "category": "Category",
         "shiping": "All over the world",
         "shipping": "Free",
-        "oldprice": 99.99,
+        "oldprice": 10.99,
         "thumbnails": [
             "img/img-product/Essential-oils-page2/Lavender/lavender-01.jpg",
             "img/img-product/Essential-oils-page2/Lavender/lavender-02.jpg",
@@ -76,12 +76,12 @@
             "img/img-product/Essential-oils-page2/Lavender/lavender-04.jpg",
             "img/img-product/Essential-oils-page2/Lavender/lavender-05.jpg"
           ]
-
+        
       },
       {
         "name": "ImmuneAid",
         "name2": "Immune Aid",
-        "price": 29.99,
+        "price": 9.99,
         "image": "img/img-product/Essential-oils-page2/ImmuneAid.png",
         "imagehover": "img/img-product/Essential-oils-page2/ImmuneAid-hover.png",
         "about": "BOOST YOUR IMMUNE SYSTEM: Organic Immune Aid was created to help support your immune system when life gets hectic and stressful. This blend contains the 100% pure, undiluted essential oils of Frankincense Serrata, Tea Tree, Rosemary 1,8-Cineole, Lemon, Eucalyptus, and Sweet Orange.",
@@ -94,7 +94,7 @@
         "category": "Category",
         "shiping": "All over the world",
         "shipping": "Free",
-        "oldprice": 99.99,
+        "oldprice": 10.99,
         "thumbnails": [
             "img/img-product/Essential-oils-page2/ImmuneAid/ImmuneAid-01.jpg",
             "img/img-product/Essential-oils-page2/ImmuneAid/ImmuneAid-02.jpg",
@@ -106,21 +106,21 @@
       },
       {
         "name": "GermFighter",
-        "name2": "GermFighter",
-        "price": 29.99,
+        "name2": "Germ Fighter",
+        "price": 9.99,
         "image": "img/img-product/Essential-oils-page2/GermFighter.png",
         "imagehover": "img/img-product/Essential-oils-page2/GermFighter-hover.png",
-        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
-        "about1": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
-        "about2": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
-        "about3": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "about": "DEFENSE SHIELD FOR YOUR IMMUNE SYSTEM: Germ Fighter essential oil is a natural, organic blend of Lemon, Clove Bud, Eucalyptus Globulus, Cinnamon Cassia, Rosemary 1,8-Cineole. It’s designed to support your immune system in fighting off germs; providing you relief and keeping you in good health.",
+        "about1": "100% PURE OIL CRAFTED BY EXPERTS: Our Aromatherapists use only 100% Pure, undiluted essential oils. Breathe in this therapeutic-grade synergy oil with an aromatherapy diffuser or mix with a Plant Therapy Carrier Oil and massage into your feet to fight colds, sinus healing and help with acute congestion.",
+        "about2": "BATCH SPECIFIC GC-MS REPORTS ON EVERY OIL: Every bottle of oil from Plant Therapy goes through multiple rounds of testing including organoleptic testing by Robert Tisserand, an essential oil expert, and multiple rounds of GC-MS testing by several third-party laboratories.",
+        "about3": "HIGH-QUALITY AFFORDABLE ESSENTIAL OILS: At Plant Therapy our goal is to positively impact the lives of as many people as we possibly can, by selling such a high quality product at an affordable price. Be confident knowing you are purchasing quality oils at direct-to-consumer prices.",
         "quantity": "100",
         "color": "black",
         "available": "In stock",
         "category": "Category",
         "shiping": "All over the world",
         "shipping": "Free",
-        "oldprice": 99.99,
+        "oldprice": 10.99,
         "thumbnails": [
             "img/img-product/Essential-oils-page2/GermFighter/GermFighter-01.jpg",
             "img/img-product/Essential-oils-page2/GermFighter/GermFighter-02.jpg",
@@ -128,25 +128,24 @@
             "img/img-product/Essential-oils-page2/GermFighter/GermFighter-04.jpg",
             "img/img-product/Essential-oils-page2/GermFighter/GermFighter-05.jpg"
           ]
-
       },
       {
         "name": "ClarySage",
-        "name2": "ClarySage",
-        "price": 29.99,
+        "name2": "Clary Sage",
+        "price": 9.99,
         "image": "img/img-product/Essential-oils-page2/ClarySage.png",
         "imagehover": "img/img-product/Essential-oils-page2/ClarySage-hover.png",
-        "about": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
-        "about1": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
-        "about2": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
-        "about3": "day la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san phamday la phan gioi thieu san pham",
+        "about": "BEYOND CALMING: Clary Sage is a balancing, mood-boosting oil that can help calm the turbulent emotions that may arise during that time of the month. When applied topically to the abdomen, it can also help soothe discomfort. For menstrual discomfort, combine two drops each Clary Sage, Geranium Bourbon, and Marjoram Sweet in your favorite carrier oil and massage onto your abdomen.",
+        "about1": "CREATE A CALMING & GROUNDING ATMOSPHERE: Add 3-4 drops to your diffuser, Diffuse for 30-60 minutes, Inhale deeply & repeat 2-3 times a day. FOR HAIR, SKIN, & NAILS: For gorgeous hair, skin, and nails, Clary Sage is definitely an oil you want to have on hand as it can help with all three. For topical appliation, dilute to 1-3%.",
+        "about2": "100% PURE AND FRESH CLARY SAGE OIL: Steam distilled from the flowering tops of the Clary Sage plant, Scent: Earthy, fruity and floral aroma that is both nutty and herbaceous, Country of Origin: France.BLENDS WELL WITH OTHER ESSENTIAL OILS: Such as Black Pepper, Bergamot, Cedarwood, Clove, Clary Sage, Geranium, Helichrysum, Lemon, Neroli, Patchouli, Rose Absolute, Rosemary, Sandalwood, Vetiver.",
+        "about3": "BATCH SPECIFIC GC-MS REPORTS ON EVERY OIL: Every bottle of oil from Plant Therapy goes through multiple rounds of testing including organoleptic testing and multiple rounds of GC-MS testing by several third-party laboratories. HIGH-QUALITY AFFORDABLE ESSENTIAL OILS: At Plant Therapy our goal is to positively impact the lives of as many people as we possibly can, by selling such a high quality product at an affordable price. Be confident knowing you are purchasing quality oils at direct-to-consumer prices.",
         "quantity": "100",
         "color": "black",
         "available": "In stock",
         "category": "Category",
         "shiping": "All over the world",
         "shipping": "Free",
-        "oldprice": 99.99,
+        "oldprice": 10.99,
         "thumbnails": [
             "img/img-product/Essential-oils-page2/Clary-Sage/Clary-Sage-01.jpg",
             "img/img-product/Essential-oils-page2/Clary-Sage/Clary-Sage-02.jpg",
