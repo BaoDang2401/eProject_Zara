@@ -1022,61 +1022,60 @@
                         <!-- <br> -->
                         <div id="current-time"></div>
                         <script>
-                         var curDate = new Date();
-      
-                        // Ngày hiện tại
-                        var curDay = curDate.getDate();
- 
-                        // Tháng hiện tại
-                        var curMonth = curDate.getMonth() + 1;
-      
-                        // Năm hiện tại
-                        var curYear = curDate.getFullYear();
-
-                        //Thời gian hiện tại
-                        var Hours = curDate.getHours();
-                        var Minutes = curDate.getMinutes();
-
-                        // Set PM / AM
-                        var period = "";
-                        if (Hours >=12){
-                            period = "PM";
-                        } else {
-                            period = "AM";
-                        }
-
-                        // Set 12 hours
-                        if(Hours == 0){
-                            Hours = 12;
-                        } else {
-                            if(Hours >12){
-                                Hours= Hours-12;
+                            const outputDom = document.getElementById("current-time")
+                            function getCurrentDateAsString() {
+                                var curDate = new Date();
+    
+                                // Ngày hiện tại
+                                var curDay = curDate.getDate();
+    
+                                // Tháng hiện tại
+                                var curMonth = curDate.getMonth() + 1;
+    
+                                // Năm hiện tại
+                                var curYear = curDate.getFullYear();
+    
+                                //Thời gian hiện tại
+                                var Hours = curDate.getHours();
+                                var Minutes = curDate.getMinutes();
+    
+                                // Set PM / AM
+                                var period = "";
+                                if (Hours >= 12) {
+                                    period = "PM";
+                                } else {
+                                    period = "AM";
+                                }
+    
+                                // Set 12 hours
+                                if (Hours == 0) {
+                                    Hours = 12;
+                                } else {
+                                    if (Hours > 12) {
+                                        Hours = Hours - 12;
+                                    }
+                                }
+    
+                                return "Date: " + curDay + "/" + curMonth + "/" + curYear + " - Time: " + Hours + ":" + Minutes + " " + period;
                             }
-                        }
-
-                        //Kinh độ vĩ độ
-                        var LocationNow = getLocation();
-                        
-                        function getLocation() {
-                        if (navigator.geolocation) {
-                            navigator.geolocation.getCurrentPosition((position) => {
-                            const { latitude, longitude } = position.coords;
-
-                            // TODO: write code to do something with the location
+                            async function getLocation() {
+                                return new Promise((resolve, reject) => {
+                                    navigator.geolocation.getCurrentPosition(resolve, reject);
+                                }).then((position) => {
+                                    const lat = position.coords.latitude;
+                                    const long = position.coords.longitude;
+                                    return " - Latitude: " + lat + " - Longitude: " + long;
+                                }).catch((err) => {
+                                    console.error(err.message);
+                                    return undefined;
+                                });
+                            }
+                            document.addEventListener("DOMContentLoaded", async function () {
+                                const LocationNow = await getLocation();
+                                const CurrentDate = getCurrentDateAsString();
+                                outputDom.innerHTML = CurrentDate + LocationNow;
                             });
-                        } else console.log("Geolocation is not supported by this browser.");
-                        }
-
-                        $(document).ready(() => {
-                        getLocation();
-                        });
-                        
-
-                        // Gán vào thẻ HTML
-                         document.getElementById('current-time').innerHTML = "Date: " + curDay + "/" + curMonth + "/" + curYear + " - Time: " + Hours + ":" + Minutes + " " + period + " " + LocationNow ;
-                    
-
-                    </script>
+                        </script>
 
                         <!-- <a style="margin-top: 10px;" onclick="getLocation()">Your location</a>
 
