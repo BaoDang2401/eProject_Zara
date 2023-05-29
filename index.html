@@ -777,11 +777,11 @@
         app.service("CartService", function () {
             var cartItems = [];
             var cartItems = [];
-            var couponCode = ""; // code for coupon
+            var couponCode = "friendlyZara"; // code for coupon
             var discount = 0; // discount value
             this.applyCoupon = function (code) {
                 // checking if coupon code is valid
-                if (code === "nit") {
+                if (code === "friendlyZara") {
                     couponCode = code;
                     discount = 0.1; // discount 10%
                 } else {
