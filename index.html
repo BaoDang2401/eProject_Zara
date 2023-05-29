@@ -688,12 +688,11 @@
 
         app.service("CartService", function () {
             var cartItems = [];
-            var cartItems = [];
-            var couponCode = ""; // code for coupon
+            var couponCode = "friendlyZara"; // code for coupon
             var discount = 0; // discount value
             this.applyCoupon = function (code) {
                 // checking if coupon code is valid
-                if (code === "nit") {
+                if (code === "friendlyZara") {
                     couponCode = code;
                     discount = 0.1; // discount 10%
                 } else {
@@ -906,8 +905,6 @@
                         District 3, Ho Chi Minh City</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>1900.123.123</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>zaratherapyclinic@gmail.com</p>
-                    <p class="mb-2 view-online"><i class="fa fa-user me-3"> </i> View online: <span id="view-online"></span> </p>
-
                 </div>
                 <div class="col-lg-2 col-md-5">
                     <h4 class="text-dark mb-4">Products</h4>
