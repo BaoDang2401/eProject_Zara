@@ -531,77 +531,77 @@
                     controller: 'CheckoutController'
                 })
                 .when("/helping", {
-                    templateUrl: "/product/products.html",
+                    templateUrl: "product/products.html",
                     controller: 'ProductController'
                 })
                 .when("/essentials", {
-                    templateUrl: "/product/essentials.html",
+                    templateUrl: "product/essentials.html",
                     controller: 'EssentialController'
                 })
                 .when("/lotions", {
-                    templateUrl: "/product/lotions.html",
+                    templateUrl: "product/lotions.html",
                     controller: 'LotionController'
                 })
                 .when("/accessories", {
-                    templateUrl: "/product/accessories.html",
+                    templateUrl: "product/accessories.html",
                     controller: 'AccessorieController'
                 })
                 .when('/lotions/:lotionName', {
-                    templateUrl: '/product/lotion-detail.html',
+                    templateUrl: 'product/lotion-detail.html',
                     controller: 'LotionDetailController'
                 })
                 .when('/helping/:productName', {
-                    templateUrl: '/product/product-detail.html',
+                    templateUrl: 'product/product-detail.html',
                     controller: 'ProductDetailController'
                 })
                 .when('/essentials/:essentialName', {
-                    templateUrl: '/product/essential-detail.html',
+                    templateUrl: 'product/essential-detail.html',
                     controller: 'EssentialDetailController'
                 })
                 .when('/accessories/:accessorieName', {
-                    templateUrl: '/product/accessories-detail.html',
+                    templateUrl: 'product/accessories-detail.html',
                     controller: 'AccessorieDetailController'
                 });
                 
         });
 
         app.controller("myController0", function ($scope, $http) {
-            $http.get("/json/service.json").then(function (response) {
+            $http.get("json/service.json").then(function (response) {
                 $scope.myData = response.data.Acupuncture;
                 $scope.service = {};
                 console.log($scope.myData)
             });
         });
         app.controller("myController1", function ($scope, $http) {
-            $http.get("/json/service.json").then(function (response) {
+            $http.get("json/service.json").then(function (response) {
                 $scope.myData = response.data.Massage;
                 $scope.service = {};
                 console.log($scope.myData)
             });
         });
         app.controller("myController2", function ($scope, $http) {
-            $http.get("/json/service.json").then(function (response) {
+            $http.get("json/service.json").then(function (response) {
                 $scope.myData = response.data.osteopathy;
                 $scope.service = {};
                 console.log($scope.myData)
             });
         });
         app.controller("myController3", function ($scope, $http) {
-            $http.get("/json/service.json").then(function (response) {
+            $http.get("json/service.json").then(function (response) {
                 $scope.myData = response.data.chiropractic;
                 $scope.service = {};
                 console.log($scope.myData)
             });
         });
         app.controller("myController4", function ($scope, $http) {
-            $http.get("/json/service.json").then(function (response) {
+            $http.get("json/service.json").then(function (response) {
                 $scope.myData = response.data.physical;
                 $scope.service = {};
                 console.log($scope.myData)
             });
         });
         app.controller("myController5", function ($scope, $http) {
-            $http.get("/json/service.json").then(function (response) {
+            $http.get("json/service.json").then(function (response) {
                 $scope.myData = response.data.work;
                 $scope.service = {};
                 console.log($scope.myData)
@@ -631,7 +631,7 @@
             }())
         })
         app.controller('ProductController', function ($scope, $http, CartService) {
-            $http.get('/json/products.json').then(function (response) {
+            $http.get('json/products.json').then(function (response) {
                 $scope.products = response.data.product;
             });
 
@@ -647,7 +647,7 @@
         app.controller('ProductDetailController', function ($scope, $http, $routeParams, CartService) {
             var productName = $routeParams.productName;
 
-            $http.get('/json/products.json').then(function (response) {
+            $http.get('json/products.json').then(function (response) {
                 $scope.products = response.data.product;
                 $scope.product = $scope.products.find(function (product) {
                     return product.name === productName;
@@ -668,7 +668,7 @@
         });
 
         app.controller('LotionController', function ($scope, $http, CartService) {
-            $http.get('/json/lotions.json').then(function (response) {
+            $http.get('json/lotions.json').then(function (response) {
                 $scope.lotions = response.data.lotion;
             });
             $scope.quantity = 1;
@@ -683,7 +683,7 @@
         app.controller('LotionDetailController', function ($scope, $http, $routeParams, CartService) {
             var lotionName = $routeParams.lotionName;
 
-            $http.get('/json/lotions.json').then(function (response) {
+            $http.get('json/lotions.json').then(function (response) {
                 $scope.lotions = response.data.lotion;
                 $scope.lotion = $scope.lotions.find(function (lotion) {
                     return lotion.name === lotionName;
@@ -703,7 +703,7 @@
         });
 
         app.controller('EssentialController', function ($scope, $http, CartService) {
-            $http.get('/json/essentials.json').then(function (response) {
+            $http.get('json/essentials.json').then(function (response) {
                 $scope.essentials = response.data.essential;
             });
             $scope.quantity = 1;
@@ -718,7 +718,7 @@
         app.controller('EssentialDetailController', function ($scope, $http, $routeParams, CartService) {
             var essentialName = $routeParams.essentialName;
 
-            $http.get('/json/essentials.json').then(function (response) {
+            $http.get('json/essentials.json').then(function (response) {
                 $scope.essentials = response.data.essential;
                 $scope.essential = $scope.essentials.find(function (essential) {
                     return essential.name === essentialName;
@@ -738,7 +738,7 @@
         });
 
         app.controller('AccessorieController', function ($scope, $http, CartService) {
-            $http.get('/json/accessories.json').then(function (response) {
+            $http.get('json/accessories.json').then(function (response) {
                 $scope.accessories = response.data.accessorie;
             });
 
@@ -754,7 +754,7 @@
         app.controller('AccessorieDetailController', function ($scope, $http, $routeParams, CartService) {
             var accessorieName = $routeParams.accessorieName;
 
-            $http.get('/json/accessories.json').then(function (response) {
+            $http.get('json/accessories.json').then(function (response) {
                 $scope.accessories = response.data.accessorie;
                 $scope.accessorie = $scope.accessories.find(function (accessorie) {
                     return accessorie.name === accessorieName;
