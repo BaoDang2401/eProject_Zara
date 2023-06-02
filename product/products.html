@@ -5,11 +5,11 @@
 <div class="container pb-5">
   <div class="container">
     <div style="padding-top:40px; padding-left: 70%;">
-     <b>Search Products:</b> <input type="search" placeholder="Search">
+     <b>Search Products:</b> <input type="search" placeholder="Search" ng-model="searchName">
     </div>
     
     <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-4 col-sm-6 pt-3 pb-3 d-flex justify-content-center" ng-repeat="product in products">
+      <div class="col-lg-4 col-md-4 col-sm-6 pt-3 pb-3 d-flex justify-content-center" ng-repeat="product in products | filter: {name2: searchName}">
         <div class="product-card ">
           <a ng-href="#!/helping/{{product.name}}">
             <div class="logo-cart">
@@ -41,7 +41,7 @@
           </a>
           <div class="button">
             <div class="button-layer"></div>
-            <button data-name="{{ product.name2 }}" ng-click="addToCart(product)">Add to cart</button>
+            <button data-name="{{ product.name2 }}" ng-click="addToCart(product)" onclick="addProduct()">Add to cart</button>
           </div>
         </div>
       </div>
