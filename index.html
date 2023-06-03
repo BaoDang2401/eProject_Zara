@@ -989,9 +989,19 @@
     </script>
     <script>
         function submitCheckout(){
-                alert("Check Out Successfully")
-                window.location.href = "/";
-
+            const a = ['firstName', 'lastName', 'email', 'address', 'address2', 'zip'];
+            var hasError = false;
+            a.forEach(e => {
+                if (!document.getElementById(e).value) {
+                    hasError = true;
+                }
+            })
+            if (!hasError) {
+                alert('Checkout successfully');
+            }
+            else {
+                alert('Please fill all the fields');
+            }
         }
     </script>
     <script>
