@@ -1,8 +1,6 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-size: 20px;
-
 }
 .center{
     margin-left: auto;
@@ -18,7 +16,8 @@ h1{
 b{
     font-size: 25px;
 }
-p{  
+
+p, .p{  
     text-align: justify;
     font-size: 20px;
 }

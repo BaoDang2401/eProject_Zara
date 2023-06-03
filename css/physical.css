@@ -1,7 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-size: 20px;
+
 
 }
 .center{
@@ -40,8 +40,13 @@ p{
     padding-top: 40px;
 }
 .a{
+    font-size: 20px;
     padding-top:20px ;
 }
 .a-a1{
     padding-top: 20px;
+}
+
+.y{
+    font-size: 20px;
 }

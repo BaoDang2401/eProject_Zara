@@ -2,7 +2,6 @@
     border: 0px;
     padding: 0px;
     margin: 0px;
-    font-size: 20px;
 }
 .center{
     margin-left: auto;
@@ -20,7 +19,7 @@ p{
     font-size: 20px;
 }
 .a{
-    /* font-size: 20px; */
+    font-size: 20px;
     text-align: justify;
 }
 .img1{
