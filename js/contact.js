@@ -19,8 +19,8 @@ function Submit() {
     }
     if (tel === "") {
         errorMessageemail.innerHTML = "Please enter your phone number.";
-    } else if (!/^\+84[0-9]{9}$/.test(tel)) {
-        errorMessageemail.innerHTML = "Format: +84 xxx.xxx.xxx";
+    }  else if (tel.length !== 10){
+        errorMessageemail.innerHTML = "Only 10 digit numbers are accepted.";
     }
     if (email === "") {
         errorMessagep.innerHTML = "Please enter your email.";
@@ -33,7 +33,7 @@ function Submit() {
 
     // alert("check eror")
     if (name && tel && email && message) {
-        var successMessage =
+        var successMessage =    
             "<br>Full Name: " + name +
             "<br>Phone: " + tel +
             "<br>Email: " + email +
@@ -41,10 +41,11 @@ function Submit() {
 
         document.getElementById("successMessage").innerHTML = successMessage;
         $('#successModal').modal('show');
+      
         // Reset giá trị của các trường input sau khi xử lý form
-        document.getElementById("FullName").value = "";
-        document.getElementById("Phone").value = "";
-        document.getElementById("Email").value = "";
-        document.getElementById("messageInput").value = "";
+         name.value = '';
+        tel.value = '';
+        email.value = '';
+        message.value = '';
     }
 }
