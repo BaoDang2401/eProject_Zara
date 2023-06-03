@@ -1,5 +1,5 @@
 
-function Submit() {
+function SubmitContact() {
     var name = document.getElementById("FullName").value;
     var tel = document.getElementById("tel").value;
     var email = document.getElementById("Email").value;
