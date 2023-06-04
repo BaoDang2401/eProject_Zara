@@ -4,47 +4,68 @@ function SubmitContact() {
     var tel = document.getElementById("tel").value;
     var email = document.getElementById("Email").value;
     var message = document.getElementById("messageInput").value;
-    const errorMessage = document.getElementById("NameError");
-    const errorMessageemail = document.getElementById("PhoneError");
-    const errorMessagep = document.getElementById("EmailError");
+    const errorMessage = document.getElementById("nameError");
+    const errorMessageemail = document.getElementById("phoneError");
+    const errorMessagep = document.getElementById("emailError");
     const errorMessagepp = document.getElementById("messageError");
-    // Xóa thông báo lỗi trước đó
-    // var errorMessages = document.getElementsByClassName("error-message");
-    // for (var i = 0; i < errorMessages.length; i++) {
-    //     errorMessages[i].innerHTML = "";
-    // }
 
-    if (name === "") {
+    var hasError = false;
+
+    document.getElementById("nameError").innerHTML = "";
+    document.getElementById("phoneError").innerHTML = "";
+    document.getElementById("emailError").innerHTML = "";
+    document.getElementById("messageError").innerHTML = "";
+
+    if (!name) {
         errorMessage.innerHTML = "Please enter your full name.";
     }
-    if (tel === "") {
+    if (!tel) {
         errorMessageemail.innerHTML = "Please enter your phone number.";
-    } else if (!/^\+84[0-9]{9}$/.test(tel)) {
-        errorMessageemail.innerHTML = "Format: +84 xxx.xxx.xxx";
+    } else {
+        if (!/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g.test(tel)) {
+            errorMessageemail.innerHTML = "Only 10 digit numbers are accepted";
+            hasError = true;
+        } else if (tel.length !== 10) {
+            errorMessageemail.innerHTML = "Only 10 digit numbers are accepted.";
+            hasError = true;
+        }
+        // else {
+        //     errorMessageemail.innerHTML = "Only 10 digit numbers are accepted";
+        //     hasError = true;
+        // }
     }
-    if (email === "") {
+    if (!email) {
         errorMessagep.innerHTML = "Please enter your email.";
     } else if (!/^[a-zA-Z0-9]{4,}@[a-zA-Z0-9]{4,}\.[a-zA-Z0-9]{3,}/.test(email)) {
         errorMessagep.innerHTML = "Format: abc1@gmail.com";
     }
-    if (message === "") {
+    if (!message) {
         errorMessagepp.innerHTML = "Please enter a message.";
     }
 
-    // alert("check eror")
-    if (name && tel && email && message) {
-        var successMessage =
-            "<br>Full Name: " + name +
-            "<br>Phone: " + tel +
-            "<br>Email: " + email +
-            "<br>Message: " + message;
 
-        document.getElementById("successMessage").innerHTML = successMessage;
-        $('#successModal').modal('show');
-        // Reset giá trị của các trường input sau khi xử lý form
-        document.getElementById("FullName").value = "";
-        document.getElementById("Phone").value = "";
-        document.getElementById("Email").value = "";
-        document.getElementById("messageInput").value = "";
+    // location.reload()
+    if (!hasError) {
+        console.log('!!!!!!!!!')
+        saveUser(phone, password, name);
+        // document.getElementById("message").innerHTML = "Register successfully, please login to continue. <br> You can use \"friendlyZara\" code to get 10% discount.";
+        // document.getElementById("message").style = "color: green";
+        if (name && tel && email && message) {
+            var successMessage =
+                "<br>Full Name: " + name +
+                "<br>Phone: " + tel +
+                "<br>Email: " + email +
+                "<br>Message: " + message;
+
+            document.getElementById("successMessage").innerHTML = successMessage;
+            $('#successModal').modal('show');
+
+            // Reset giá trị của các trường input sau khi xử lý form
+            name.value = '';
+            tel.value = '';
+            email.value = '';
+            message.value = '';
+        }
+        return;
     }
 }

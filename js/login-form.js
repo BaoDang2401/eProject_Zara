@@ -208,6 +208,9 @@ function registerFunc() {
   var password = document.getElementById("password").value;
   var cfpassword = document.getElementById("cfpassword").value;
 
+  const elem = document.getElementById("gender"); // get the element with id="gender"
+  elem.value = "male"; // change its value to "male"
+
   document.getElementById("NameError").innerHTML = "";
   document.getElementById("EmailError").innerHTML = "";
   document.getElementById("PhoneError").innerHTML = "";
@@ -223,19 +226,24 @@ function registerFunc() {
     document.getElementById("EmailError").innerHTML = "Please enter your email.";
     hasError = true;
   } else {
-	if (!/^[a-zA-Z0-9]{4,}@[a-zA-Z0-9]{4,}\.[a-zA-Z0-9]{3,}/.test(email)) {
-		document.getElementById("EmailError").innerHTML = "Format: abc1@gmail.com";
-		hasError = true;
-	}
-  } 
+    if (!/^[a-zA-Z0-9]{4,}@[a-zA-Z0-9]{4,}\.[a-zA-Z0-9]{3,}/.test(email)) {
+      document.getElementById("EmailError").innerHTML = "Format: abc1@gmail.com";
+      hasError = true;
+    } else {
+      document.getElementById("EmailError").innerHTML = "";
+    }
+  }
   if (!phone) {
     document.getElementById("PhoneError").innerHTML = "Please enter your phone number.";
     hasError = true;
   } else {
 	   if (!/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g.test(phone)) {
-			document.getElementById("PhoneError").innerHTML = "Format: 090x.xxx.xxx";
+			document.getElementById("PhoneError").innerHTML = "Only 10 digit numbers are accepted";
 			hasError = true;
-		}
+		} else if (phone.length !== 10){
+      document.getElementById("PhoneError").innerHTML = "Only 10 digit numbers are accepted";
+			hasError = true;
+    }
   }
 
   if (!password) {
@@ -243,10 +251,17 @@ function registerFunc() {
     hasError = true;
   } else {
 		if (cfpassword != password) {
-			document.getElementById("passwordError").innerHTML = "Password and confirm password are not match, kindly re-enter.";
+			document.getElementById("passwordError").innerHTML = "Password and confirm password are not match.";
 			hasError = true;
-		}
+		} else if (password.length < 5){
+      document.getElementById("passwordError").innerHTML = "Password must have more than 5 characters.";
+			hasError = true;
+    }
   }
+
+  
+
+  
 
   if (hasError) {
     document.getElementById("message").innerHTML = "Please fill in all required fields.";
@@ -254,7 +269,7 @@ function registerFunc() {
     return;
   } else {
 	  saveUser(phone, password, name);
-	 document.getElementById("message").innerHTML = "Register successfully, please login to continue.";
+	 document.getElementById("message").innerHTML = "Register successfully, please login to continue. <br> You can use \"friendlyZara\" code to get 10% discount.";
    document.getElementById("message").style = "color: green";
     return;
   }
