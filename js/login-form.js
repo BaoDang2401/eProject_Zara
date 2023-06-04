@@ -208,6 +208,9 @@ function registerFunc() {
   var password = document.getElementById("password").value;
   var cfpassword = document.getElementById("cfpassword").value;
 
+  const elem = document.getElementById("gender"); // get the element with id="gender"
+  elem.value = "male"; // change its value to "male"
+
   document.getElementById("NameError").innerHTML = "";
   document.getElementById("EmailError").innerHTML = "";
   document.getElementById("PhoneError").innerHTML = "";
@@ -223,11 +226,13 @@ function registerFunc() {
     document.getElementById("EmailError").innerHTML = "Please enter your email.";
     hasError = true;
   } else {
-	if (!/^[a-zA-Z0-9]{4,}@[a-zA-Z0-9]{4,}\.[a-zA-Z0-9]{3,}/.test(email)) {
-		document.getElementById("EmailError").innerHTML = "Format: abc1@gmail.com";
-		hasError = true;
-	}
-  } 
+    if (!/^[a-zA-Z0-9]{4,}@[a-zA-Z0-9]{4,}\.[a-zA-Z0-9]{3,}/.test(email)) {
+      document.getElementById("EmailError").innerHTML = "Format: abc1@gmail.com";
+      hasError = true;
+    } else {
+      document.getElementById("EmailError").innerHTML = "";
+    }
+  }
   if (!phone) {
     document.getElementById("PhoneError").innerHTML = "Please enter your phone number.";
     hasError = true;
@@ -253,6 +258,10 @@ function registerFunc() {
 			hasError = true;
     }
   }
+
+  
+
+  
 
   if (hasError) {
     document.getElementById("message").innerHTML = "Please fill in all required fields.";
