@@ -208,9 +208,6 @@ function registerFunc() {
   var password = document.getElementById("password").value;
   var cfpassword = document.getElementById("cfpassword").value;
 
-  const elem = document.getElementById("gender"); // get the element with id="gender"
-  elem.value = "male"; // change its value to "male"
-
   document.getElementById("NameError").innerHTML = "";
   document.getElementById("EmailError").innerHTML = "";
   document.getElementById("PhoneError").innerHTML = "";
