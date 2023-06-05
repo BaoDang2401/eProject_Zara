@@ -2,7 +2,7 @@
    
     padding: 0px;
     margin: 0px;
-    font-size: 20px;
+
 
 }
 .center{
@@ -15,7 +15,7 @@ h1{
     font-size: 30px;
     padding-top: 25px;
 }
-p{
+p, .p{
     text-align: justify;
     font-size: 20px;
 }

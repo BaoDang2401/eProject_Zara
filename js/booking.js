@@ -1,4 +1,4 @@
-function Submitcontact() {
+function Submitbooking() {
     var date = document.getElementById("date").value;
     var time = document.getElementById("time").value;
     var name = document.getElementById("name").value;

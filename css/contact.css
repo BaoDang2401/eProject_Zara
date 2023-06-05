@@ -3,7 +3,6 @@
    
     padding: 0px;
     margin: 0px;
-    font-size: 20px;
 }
 .center{
     margin-left: auto;
@@ -27,13 +26,12 @@ hr {
 }
 .p{
     text-align: center;
+    font-size: 20px;
+
 }
 .box{
     height: 100%;
     background-color: #F3F3F3;
     padding: 20px;
 }
-.ggmap{
-    height: 300px;
-    width: 100%;
-}
+

@@ -2,8 +2,6 @@
     border: 0px;
     padding: 0px;
     margin: 0px;
-    font-size: 20px;
-
 }
 .center{
     text-align: center;
@@ -27,7 +25,7 @@ h1{
     height: 100%;
     width: 100%;
 }
-p,b{
+p,b, .p{
     text-align: justify;
     font-size: 20px;
 }

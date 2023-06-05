@@ -8,6 +8,11 @@ input::placeholder {
     font-size: 15px;
 
 }
+input[type=search]{
+    outline-offset: 0;
+    border-radius: 10px;
+    border-color: var(--primary);
+}
 a {
     text-decoration: none;
 }

@@ -1,30 +1,30 @@
 $(document).ready(function () {
   checkLoggedInUser();
 
-  $('#registerForm').submit(function (event) {
-    event.preventDefault();
+  // $('#registerForm').submit(function (event) {
+  //   event.preventDefault();
 
-    var fullname = $('#fullname').val();
-    var phone = $('#phone').val();
-    var password = $('#password').val();
-    var cfpassword = $('#cfpassword').val();
-    $('#fullnameOutput').text(fullname);
+  //   var fullname = $('#fullname').val();
+  //   var phone = $('#phone').val();
+  //   var password = $('#password').val();
+  //   var cfpassword = $('#cfpassword').val();
+  //   $('#fullnameOutput').text(fullname);
 
-    if (checkExistingUser(phone)) {
-      $('#message').text('Phone does not exist. Kindly input your phone again.').css('color', 'red');
-      return;
-    }
-    if (password !== cfpassword){
-      
-      $('#message').text('Password and confirm password are not match.').css('color', 'red');
-      return;
-    }
-    saveUser(phone, password, fullname);
+  //   if (checkExistingUser(phone)) {
+  //     $('#message').text('Phone does not exist. Kindly input your phone again.').css('color', 'red');
+  //     return;
+  //   }
+  //   if (password !== cfpassword) {
 
-    $('#phone').val('');
-    $('#password').val('');
-    $('#message').text('Register successfully! Please login to continue.').css('color', 'green');
-  });
+  //     $('#message').text('Password and confirm password are not match.').css('color', 'red');
+  //     return;
+  //   }
+  //   saveUser(phone, password, fullname);
+
+  //   $('#phone').val('');
+  //   $('#password').val('');
+  //   $('#message').text('Register successfully! Please login to continue.').css('color', 'green');
+  // });
 
   $('#loginForm').submit(function (event) {
     event.preventDefault();
@@ -200,3 +200,76 @@ function checkPassword(phone, password) {
 
   return false;
 }
+
+function registerFunc() {
+  var name = document.getElementById("fullname").value;
+  var email = document.getElementById("emails").value;
+  var phone = document.getElementById("phone").value;
+  var password = document.getElementById("password").value;
+  var cfpassword = document.getElementById("cfpassword").value;
+
+  document.getElementById("NameError").innerHTML = "";
+  document.getElementById("EmailError").innerHTML = "";
+  document.getElementById("PhoneError").innerHTML = "";
+  document.getElementById("passwordError").innerHTML = "";
+
+  var hasError = false;
+
+  if (!name) {
+    document.getElementById("NameError").innerHTML = "Please enter your name.";
+    hasError = true;
+  }
+  if (!email) {
+    document.getElementById("EmailError").innerHTML = "Please enter your email.";
+    hasError = true;
+  } else {
+    if (!/^[a-zA-Z0-9]{4,}@[a-zA-Z0-9]{4,}\.[a-zA-Z0-9]{3,}/.test(email)) {
+      document.getElementById("EmailError").innerHTML = "Format: abc1@gmail.com";
+      hasError = true;
+    } else {
+      document.getElementById("EmailError").innerHTML = "";
+    }
+  }
+  if (!phone) {
+    document.getElementById("PhoneError").innerHTML = "Please enter your phone number.";
+    hasError = true;
+  } else {
+	   if (!/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g.test(phone)) {
+			document.getElementById("PhoneError").innerHTML = "Only 10 digit numbers are accepted";
+			hasError = true;
+		} else if (phone.length !== 10){
+      document.getElementById("PhoneError").innerHTML = "Only 10 digit numbers are accepted";
+			hasError = true;
+    }
+  }
+
+  if (!password) {
+    document.getElementById("passwordError").innerHTML = "Please enter your password.";
+    hasError = true;
+  } else {
+		if (cfpassword != password) {
+			document.getElementById("passwordError").innerHTML = "Password and confirm password are not match.";
+			hasError = true;
+		} else if (password.length < 5){
+      document.getElementById("passwordError").innerHTML = "Password must have more than 5 characters.";
+			hasError = true;
+    }
+  }
+
+  
+
+  
+
+  if (hasError) {
+    document.getElementById("message").innerHTML = "Please fill in all required fields.";
+    document.getElementById("message").style = "color: red";
+    return;
+  } else {
+	  saveUser(phone, password, name);
+	 document.getElementById("message").innerHTML = "Register successfully, please login to continue. <br> You can use \"friendlyZara\" code to get 10% discount.";
+   document.getElementById("message").style = "color: green";
+    return;
+  }
+}
+
+

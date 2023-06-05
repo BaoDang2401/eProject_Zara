@@ -1,431 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Zara Therapy Clinic</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content name="keywords">
-        <meta content name="description">
+<head>
+    <meta charset="utf-8">
+    <title>Zara Therapy Clinic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content name="keywords">
+    <meta content name="description">
 
-        <!-- Favicon -->
-        <link href="img/logo.png" rel="icon">
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
-            rel="stylesheet">
-        <script src="js/angular.min.js"></script>
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-        <!-- Icon Font Stylesheet -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-            rel="stylesheet">
-        <script src="https://kit.fontawesome.com/5c0abb1169.js"
-            crossorigin="anonymous"></script>
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css"
-            rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'
-            rel='stylesheet'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script src="js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5c0abb1169.js" crossorigin="anonymous"></script>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-            crossorigin="anonymous">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/responsive.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <!-- <script src="js/login.js"></script> -->
-        <script src="js/login-form.js"></script>
+    <!-- <script src="js/login.js"></script> -->
+    <script src="js/login-form.js"></script>
+    <link href="notify.css" rel="stylesheet">
 
-    </head>
+</head>
 
-    <body ng-app="myApp">
-        <!-- Spinner Start -->
-        <div id="spinner"
-            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" role="status"
-                style="width: 3rem; height: 3rem;"></div>
-        </div>
-        <!-- Spinner End -->
+<body ng-app="myApp">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
 
-        <!-- Topbar Start -->
+    <!-- Topbar Start -->
 
-        <!-- Topbar End -->
+    <!-- Topbar End -->
 
-        <!-- Navbar Start -->
-        <div class="container-fluid bg-white sticky-top">
-            <div class="d-flex justify-content-center nav-header">
-                <nav
-                    class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+        <div class="d-flex justify-content-center nav-header">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
 
-                    <a href="index.html" class="navbar-brand pb-3 px-4 pt-3">
-                        <img src="img/logo_navbar.png" height="50px" alt>
-                    </a>
-                    <button type="button" class="navbar-toggler me-0"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarCollapse">
-                        <div class="navbar-nav">
-                            <a href="#/" class="nav-item nav-link">Home</a>
-                            <a href="#!about" class="nav-item nav-link">About us</a>
-                            <div class="nav-item dropdown">
-                                <a href="#services"
-                                    class="nav-link dropdown-toggle"
-                                    data-bs-toggle="dropdown">Services</a>
-                                <div
-                                    class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                    <a href="#!chiropractic"
-                                        class="dropdown-item">Chiropractic</a>
-                                    <a href="#!osteopathy" class="dropdown-item">Osteopathy</a>
-                                    <a href="#!physical" class="dropdown-item">Physical
-                                        Therapy</a>
-                                    <a href="#!work" class="dropdown-item">Work
-                                        Injuries & Car</a>
-                                    <a href="#!acupuncture"
-                                        class="dropdown-item">Acupuncture</a>
-                                    <a href="#!massage" class="dropdown-item">Massages</a>
-                                </div>
+                <a href="index.html" class="navbar-brand pb-3 px-4 pt-3">
+                    <img src="img/logo_navbar.png" height="50px" alt>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#/" class="nav-item nav-link">Home</a>
+                        <a href="#!about" class="nav-item nav-link">About us</a>
+                        <div class="nav-item dropdown">
+                            <a href="#services" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="#!chiropractic" class="dropdown-item">Chiropractic</a>
+                                <a href="#!osteopathy" class="dropdown-item">Osteopathy</a>
+                                <a href="#!physical" class="dropdown-item">Physical
+                                    Therapy</a>
+                                <a href="#!work" class="dropdown-item">Work
+                                    Injuries & Car</a>
+                                <a href="#!acupuncture" class="dropdown-item">Acupuncture</a>
+                                <a href="#!massage" class="dropdown-item">Massages</a>
                             </div>
-                            <div class="nav-item dropdown">
-                                <a href="#product"
-                                    class="nav-link dropdown-toggle"
-                                    data-bs-toggle="dropdown">Products</a>
-                                <div
-                                    class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                    <a href="#!helping" class="dropdown-item">Helping
-                                        Machines</a>
-                                    <a href="#!accessories"
-                                        class="dropdown-item">Accessories</a>
-                                    <a href="#!lotions" class="dropdown-item">Lotions</a>
-                                    <a href="#!essentials" class="dropdown-item">Essential
-                                        oils</a>
-                                </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#product" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="#!helping" class="dropdown-item">Helping
+                                    Machines</a>
+                                <a href="#!accessories" class="dropdown-item">Accessories</a>
+                                <a href="#!lotions" class="dropdown-item">Lotions</a>
+                                <a href="#!essentials" class="dropdown-item">Essential
+                                    oils</a>
                             </div>
-                            <div class="nav-item dropdown">
-                                <a href="#news" class="nav-link dropdown-toggle"
-                                    data-bs-toggle="dropdown">News</a>
-                                <div
-                                    class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                    <a href="#!news" class="dropdown-item">Health
-                                        Blog</a>
-                                    <a href="#!feedback" class="dropdown-item">Testimonials</a>
-                                </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#news" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">News</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="#!news" class="dropdown-item">Health
+                                    Blog</a>
+                                <a href="#!feedback" class="dropdown-item">Testimonials</a>
                             </div>
+                        </div>
 
-                            <a href="#booking" class="nav-item nav-link">Booking</a>
-                            <a href="#!contact" class="nav-item nav-link">Contact
-                                Us</a>
-                            <!-- <input class="search" type="search" placeholder=" Search"
+                        <a href="#booking" class="nav-item nav-link">Booking</a>
+                        <a href="#!contact" class="nav-item nav-link">Contact
+                            Us</a>
+                        <!-- <input class="search" type="search" placeholder=" Search"
                             style="margin-top: 20px; margin-bottom: 20px;border-radius: 10px;"> -->
-                            <a href="#" class="nav-item nav-link px-4"
-                                data-bs-toggle="modal"
-                                data-bs-target="#modalCart"
-                                id="cart"><i class="fa-solid fa-shopping-cart"></i>
-                                Cart</a>
-                            <a href="#" class="nav-item nav-link px-4"
-                                id="btn-hide" data-bs-toggle="modal"
-                                data-bs-target="#authModal"><i
-                                    class="fa-regular fa-user"></i></a>
-                            <div class="nav-item dropdown px-5">
-                                <a href="#" class="nav-link dropdown-toggle"
-                                    id="nav-name" style="display:none;">Hello,
-                                    <span id="fullnameOutput"
-                                        class="text-primary"></span>
-                                </a>
-                                <div
-                                    class="dropdown-menu bg-light rounded-0 rounded-bottom m-0"
-                                    id="change">
-                                    <a href="#" class="dropdown-item"
-                                        id="changename">Change Name</a>
-                                    <a href="#" class="dropdown-item"
-                                        id="changepassword">Change Password</a>
-                                    <a href="/" class="dropdown-item"
-                                        id="logoutLink">Log Out</a>
+                        <a href="#" class="nav-item nav-link px-4" data-bs-toggle="modal" data-bs-target="#modalCart"
+                            id="cart"><i class="fa-solid fa-shopping-cart"></i>
+                            Cart</a>
+                        <a href="#" class="nav-item nav-link px-4" id="btn-hide" data-bs-toggle="modal"
+                            data-bs-target="#authModal"><i class="fa-regular fa-user"></i></a>
+                        <div class="nav-item dropdown px-5">
+                            <a href="#" class="nav-link dropdown-toggle" id="nav-name" style="display:none;">Hello,
+                                <span id="fullnameOutput" class="text-primary"></span>
+                            </a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0" id="change">
+                                <a href="#" class="dropdown-item" id="changename">Change Name</a>
+                                <a href="#" class="dropdown-item" id="changepassword">Change Password</a>
+                                <a href="/" class="dropdown-item" id="logoutLink">Log Out</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="modalCart" class="modal fade" tabindex="-1" aria-labelledby="changeNameModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="changeNameModalLabel">Shopping
+                        Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <cart-items></cart-items>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <span id="checkout-alert" class="text-center">Please
+                        Login To Checkout</span>
+                    <button class="btn btn-primary text-center" id="btn-checkout"
+                        onclick="checkoutAndCloseModal()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal using to change names -->
+    <div id="changeNameModal" class="modal fade" tabindex="-1" aria-labelledby="changeNameModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="changeNameModalLabel">Change
+                        Info</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="changeNameForm">
+                        <div class="mb-3">
+                            <label for="newNameInput" class="form-label">New
+                                Name</label>
+                            <input type="text" class="form-control" id="newNameInput">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal using to change password -->
+    <div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog"
+        aria-labelledby="changePasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="changePasswordModalLabel">Change
+                        Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="changePasswordForm">
+                        <div class="mb-3">
+                            <label for="newPasswordInput">New Password</label>
+                            <input type="password" class="form-control" id="newPasswordInput" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save
+                            Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal using to login and register -->
+
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="authModalLabel">Log in /
+                        Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="registerTab" data-bs-toggle="tab" href="#loginForm">Log
+                                in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="loginTab" data-bs-toggle="tab" href="#registerForm">Register</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3">
+
+                        <div class="tab-pane fade  show active" id="loginForm">
+                            <!-- Login Form -->
+                            <form id="loginForm">
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <label class="form-label" for="loginPhone">Phone</label>
+
+                                            <input type="text" id="loginPhone" name="loginPhone"
+                                                class="form-control form-control-lg" />
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <label class="form-label" for="loginPassword">Password</label>
+
+                                            <input type="password" id="loginPassword" name="loginPassword"
+                                                class="form-control form-control-lg" />
+                                        </div>
+
+                                    </div>
+                                    <p id="message2"></p>
 
                                 </div>
-                            </div>
 
+                                <div style="text-align: center;">
+                                    <input class="btn btn-primary" type="submit" value="Sign In" />
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="registerForm">
+                            <!-- Register Form -->
+                            <form id="registerForm" name="myForm">
+
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+
+                                        <div class="form-outline">
+                                            <label class="form-label" for="fullname">Your Name</label>
+
+                                            <input type="text" id="fullname" name="fullname"
+                                                placeholder="Enter your name" class="form-control form-control-lg" />
+                                            <p id="NameError" class="error-message" style="color: red;"></p>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <label class="form-label" for="fullname">Email</label>
+
+                                            <input type="text" id="emails" name="email" placeholder="Enter your email"
+                                                class="form-control form-control-lg" />
+                                            <p id="EmailError" class="error-message" style="color: red;"></p>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <label class="form-label" for="phone">Phone</label>
+
+                                            <input type="text" id="phone" name="phone" placeholder="Enter your phone"
+                                                class="form-control form-control-lg" pattern="[0-9]{10}"
+                                                maxlength="10" />
+                                            <p id="PhoneError" class="error-message" style="color: red;"></p>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <label class="form-label" for="password">Password</label>
+
+                                            <input type="password" id="password" name="password"
+                                                placeholder="Enter your password" class="form-control form-control-lg"
+                                                minlength="5" />
+                                            <p id="passwordError" class="error-message" style="color: red;"></p>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <label class="form-label" for="password">Confirm
+                                                Password</label>
+
+                                            <input type="password" id="cfpassword" name="cfpassword"
+                                                placeholder="Confirm your password"
+                                                class="form-control form-control-lg" />
+                                            <p id="cfpasswordError" class="error-message" style="color: red;"></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="radio" name="gender" value="male" required>
+                                                Male
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="radio" name="gender" value="female" required>
+                                                Female
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="radio" name="gender" value="other" required>
+                                                Other
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p id="message" class="mt-3"></p>
+                                <div style="text-align: center;">
+                                    <input class="btn btn-primary btn-lg" type="submit" value="Sign Up"
+                                        onclick="registerFunc()" />
+                                </div>
+
+                            </form>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </div>
-        <div id="modalCart" class="modal fade" tabindex="-1"
-            aria-labelledby="changeNameModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="changeNameModalLabel">Shopping
-                            Cart</h5>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <cart-items></cart-items>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <span id="checkout-alert" class="text-center">Please
-                            Login To Checkout</span>
-                        <button class="btn btn-primary text-center"
-                            id="btn-checkout"
-                            onclick="checkoutAndCloseModal()">Checkout</button>
-                    </div>
                 </div>
+
             </div>
         </div>
-        <!-- Modal using to change names -->
-        <div id="changeNameModal" class="modal fade" tabindex="-1"
-            aria-labelledby="changeNameModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="changeNameModalLabel">Change
-                            Info</h5>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="changeNameForm">
-                            <div class="mb-3">
-                                <label for="newNameInput" class="form-label">New
-                                    Name</label>
-                                <input type="text" class="form-control"
-                                    id="newNameInput">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Save</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal using to change password -->
-        <div class="modal fade" id="changePasswordModal" tabindex="-1"
-            role="dialog"
-            aria-labelledby="changePasswordModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="changePasswordModalLabel">Change
-                            Password</h5>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="changePasswordForm">
-                            <div class="mb-3">
-                                <label for="newPasswordInput">New Password</label>
-                                <input type="password" class="form-control"
-                                    id="newPasswordInput" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Save
-                                Changes</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
-        <!-- Modal using to login and register -->
+    <!-- Navbar End -->
 
-        <div class="modal fade" id="authModal" tabindex="-1"
-            aria-labelledby="authModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="authModalLabel">Log in /
-                            Register</h5>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <ul class="nav nav-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="registerTab"
-                                    data-bs-toggle="tab" href="#loginForm">Log
-                                    in</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="loginTab"
-                                    data-bs-toggle="tab" href="#registerForm">Register</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content mt-3">
-
-                            <div class="tab-pane fade  show active"
-                                id="loginForm">
-                                <!-- Login Form -->
-                                <form id="loginForm">
-
-                                    <div class="row">
-                                        <div class="col-md-6 mb-4">
-
-                                            <div class="form-outline">
-                                                <label class="form-label"
-                                                    for="loginPhone">Phone</label>
-
-                                                <input type="text"
-                                                    id="loginPhone"
-                                                    name="loginPhone"
-                                                    class="form-control form-control-lg" />
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-
-                                            <div class="form-outline">
-                                                <label class="form-label"
-                                                    for="loginPassword">Password</label>
-
-                                                <input type="password"
-                                                    id="loginPassword"
-                                                    name="loginPassword"
-                                                    class="form-control form-control-lg" />
-                                            </div>
-
-                                        </div>
-                                        <p id="message2"></p>
-
-                                    </div>
-
-                                    <div style="text-align: center;">
-                                        <input class="btn btn-primary"
-                                            type="submit" value="Sign In" />
-                                    </div>
-
-                                </form>
-                            </div>
-                            <div class="tab-pane fade" id="registerForm">
-                                <!-- Register Form -->
-                                <form id="registerForm" name="myForm">
-
-                                    <div class="row">
-                                        <div class="col-md-12 mb-4">
-
-                                            <div class="form-outline">
-                                                <label class="form-label"
-                                                    for="fullname">Your Name</label>
-
-                                                <input type="text" id="fullname"
-                                                    name="fullname"
-                                                    placeholder="Enter your name"
-                                                    class="form-control form-control-lg"
-                                                    required />
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-
-                                            <div class="form-outline">
-                                                <label class="form-label"
-                                                    for="fullname">Email</label>
-
-                                                <input type="text" id="emails"
-                                                    name="email"
-                                                    placeholder="Enter your email"
-                                                    class="form-control form-control-lg"
-                                                    required />
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-
-                                            <div class="form-outline">
-                                                <label class="form-label"
-                                                    for="phone">Phone</label>
-
-                                                <input type="number" id="phone"
-                                                    name="phone"
-                                                    placeholder="Enter your phone"
-                                                    class="form-control form-control-lg"
-                                                    required />
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-
-                                            <div class="form-outline">
-                                                <label class="form-label"
-                                                    for="password">Password</label>
-
-                                                <input type="password"
-                                                    id="password"
-                                                    name="password"
-                                                    placeholder="Enter your password"
-                                                    class="form-control form-control-lg"
-                                                    required />
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-
-                                            <div class="form-outline">
-                                                <label class="form-label"
-                                                    for="password">Confirm
-                                                    Password</label>
-
-                                                <input type="password"
-                                                    id="cfpassword"
-                                                    name="cfpassword"
-                                                    placeholder="Confirm your password"
-                                                    class="form-control form-control-lg"
-                                                    required />
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <input type="radio"
-                                                        name="gender" required>
-                                                    Male
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <input type="radio"
-                                                        name="gender" required>
-                                                    Female
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <input type="radio"
-                                                        name="gender" required>
-                                                    Other
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p id="message" class="mt-3"></p>
-                                    <div style="text-align: center;">
-                                        <input class="btn btn-primary btn-lg"
-                                            type="submit" value="Sign Up" />
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Navbar End -->
-
-        <div ng-view></div>
+    <div ng-view></div>
 
     <!-- Quote Start -->
     <!-- Link to Bootstrap JS -->
