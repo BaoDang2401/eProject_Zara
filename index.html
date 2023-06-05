@@ -427,12 +427,11 @@
 
         <div ng-view></div>
 
-        <!-- Quote Start -->
-        <!-- Link to Bootstrap JS -->
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <!-- Custom JavaScript -->
-        <script>
+    <!-- Quote Start -->
+    <!-- Link to Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
         function checkoutAndCloseModal() {
             // navigating to other pages
             window.location.href = "#!cart";
@@ -443,7 +442,7 @@
             modalInstance.hide();
         }
     </script>
-        <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
             const thumbnailImages = document.querySelectorAll('.thumbnail');
             const productImage = document.getElementById('product-image');
@@ -465,7 +464,7 @@
             });
         });
     </script>
-        <script>
+    <script>
         var app = angular.module("myApp", ["ngRoute"]);
         app.config(function ($routeProvider) {
             $routeProvider
@@ -475,52 +474,52 @@
                 .when("/about", {
                     templateUrl: "about/about.html"
                 })
-                .when("/feedback", { 
-                    templateUrl: "Zara_feedback/feedback.html" 
+                .when("/feedback", {
+                    templateUrl: "Zara_feedback/feedback.html"
                 })
-                .when("/contact", { 
-                    templateUrl: "Zara_ContactUs/contact.html" 
+                .when("/contact", {
+                    templateUrl: "Zara_ContactUs/contact.html"
                 })
-                .when("/news", { 
-                    templateUrl: "Zara_News/news.html" 
+                .when("/news", {
+                    templateUrl: "Zara_News/news.html"
                 })
-                .when("/news1", { 
-                    templateUrl: "Zara_News/new1_detail.html" 
+                .when("/news1", {
+                    templateUrl: "Zara_News/new1_detail.html"
                 })
-                .when("/news2", { 
-                    templateUrl: "Zara_News/new2_detail.html" 
+                .when("/news2", {
+                    templateUrl: "Zara_News/new2_detail.html"
                 })
-                .when("/news3", { 
-                    templateUrl: "Zara_News/new3_detail.html" 
+                .when("/news3", {
+                    templateUrl: "Zara_News/new3_detail.html"
                 })
-                .when("/news4", { 
-                    templateUrl: "Zara_News/new4_detail.html" 
+                .when("/news4", {
+                    templateUrl: "Zara_News/new4_detail.html"
                 })
-                .when("/news5", { 
-                    templateUrl: "Zara_News/new5_detail.html" 
+                .when("/news5", {
+                    templateUrl: "Zara_News/new5_detail.html"
                 })
-                .when("/news6", { 
-                    templateUrl: "Zara_News/new6_detail.html" 
+                .when("/news6", {
+                    templateUrl: "Zara_News/new6_detail.html"
                 })
-                .when("/acupuncture", { 
-                    templateUrl: "Zara_services/acupuncture.html" 
+                .when("/acupuncture", {
+                    templateUrl: "Zara_services/acupuncture.html"
                 })
-                .when("/massage", { 
-                    templateUrl: "Zara_services/massage.html" 
+                .when("/massage", {
+                    templateUrl: "Zara_services/massage.html"
                 })
-                .when("/services", { 
-                    templateUrl: "Zara_services/service.html" 
+                .when("/services", {
+                    templateUrl: "Zara_services/service.html"
                 })
-                .when("/chiropractic", { 
-                    templateUrl: "Zara_services/chiropractic.html" 
+                .when("/chiropractic", {
+                    templateUrl: "Zara_services/chiropractic.html"
                 })
-                .when("/osteopathy", { 
-                    templateUrl: "Zara_services/osteopathy.html" 
+                .when("/osteopathy", {
+                    templateUrl: "Zara_services/osteopathy.html"
                 })
-                .when("/physical", { 
-                    templateUrl: "Zara_services/physical.html" 
+                .when("/physical", {
+                    templateUrl: "Zara_services/physical.html"
                 })
-                .when("/work", { 
+                .when("/work", {
                     templateUrl: "Zara_services/work.html"
                 })
                 .when("/cart", {
@@ -562,7 +561,7 @@
                     templateUrl: 'product/accessories-detail.html',
                     controller: 'AccessorieDetailController'
                 });
-                
+
         });
 
         app.controller("myController0", function ($scope, $http) {
@@ -787,10 +786,20 @@
                 } else {
                     couponCode = "";
                     discount = 0;
-                    alert("Your coupon is not valid.")
+                    
+                    SlimNotifierJs.notification('error', 'Notify', 'Your coupon is not valid.', 5000, false);
+
+                    $.notify({
+                title: 'Notification',
+                content: 'Successfully Add to Cart',
+                timeout: 2000
+            });
                 }
             };
-
+            this.removeAllItems = function () {
+                cartItems = [];
+                this.saveCartItems();
+            };
             this.getTotalPriceWithDiscount = function () {
                 var totalPrice = this.getTotalPrice();
                 var discountedPrice = totalPrice - (totalPrice * discount);
@@ -946,7 +955,7 @@
                     $scope.updateTotalPrice = function () {
                         $scope.totalPrice = CartService.getTotalPrice();
                         $scope.totalPrice2 = CartService.getTotalPrice();
-                        
+
                     };
                     $scope.totalPrice = CartService.getTotalPrice();
                     $scope.totalPrice2 = CartService.getTotalPrice();
@@ -960,11 +969,20 @@
                         $scope.totalPrice = CartService.getTotalPrice();
 
                     };
+                    $scope.submitCart = function () {
+                        // Thực hiện các thao tác cần thiết trước khi gửi giỏ hàng đi, ví dụ: lưu giỏ hàng vào cơ sở dữ liệu
+                        // ...
+
+                        // Xóa hết sản phẩm trong giỏ hàng
+                        CartService.removeAllItems();
+                        $scope.cartItems = CartService.getCartItems();
+                        $scope.totalPrice = CartService.getTotalPrice();
+                    };
                 }
             };
         });
     </script>
-        <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
             var menuLinks = document.querySelectorAll("#menu a.nav-link");
 
@@ -983,56 +1001,68 @@
         });
     </script>
     <script>
-        function submitCheckout(){
-                alert("Check Out Successfully")
+        function submitCheckout() {
+            const a = ['firstName', 'lastName', 'email', 'address', 'zip'];
+            var hasError = false;
+            a.forEach(e => {
+                if (!document.getElementById(e).value) {
+                    hasError = true;
+                }
+            })
+            if (!hasError) {
+                SlimNotifierJs.notification('success', 'Notify', 'Checkout successfully', 5000, false);
                 window.location.href = "/";
 
+            }
+            else {
+                SlimNotifierJs.notification('error', 'Notify', 'Please fill all the fields', 5000, false);
+
+            }
         }
     </script>
     <script>
-        function addProduct(){
-            alert("Successfully Add to Cart")
+        function addProduct() {
+            SlimNotifierJs.notification('success', 'Notify', 'Successfully Add to Cart', 5000, false);
         }
     </script>
-        <!-- Footer Start -->
-        <hr>
-        <div class="container-fluid bg-white footer pb-5 wow fadeIn"
-            data-wow-delay="0.1s">
-            <div class="container-xxl">
-                <div class="row g-5">
-                    <div class="col-lg-4 col-md-5">
-                        <h4 class="text-dark mb-4">Contact</h4>
-                        <b>Please feel free to contact us</b>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>294
-                            Nam Ky Khoi Nghia Street, Ward 8,
-                            District 3, Ho Chi Minh City</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>1900.123.123</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>zaratherapyclinic@gmail.com</p>
-                        <p class="mb-2 view-online"><i class="fa fa-user me-3">
-                            </i> View online: <span id="view-online"></span>
-                        </p>
+    <!-- Footer Start -->
+    <hr>
+    <div class="container-fluid bg-white footer pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-xxl">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-5">
+                    <h4 class="text-dark mb-4">Contact</h4>
+                    <b>Please feel free to contact us</b>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>294
+                        Nam Ky Khoi Nghia Street, Ward 8,
+                        District 3, Ho Chi Minh City</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>1900.123.123</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>zaratherapyclinic@gmail.com</p>
+                    <p class="mb-2 view-online"><i class="fa fa-user me-3">
+                        </i> View online: <span id="view-online"></span>
+                    </p>
 
-                    </div>
-                    <div class="col-lg-2 col-md-5">
-                        <h4 class="text-dark mb-4">Products</h4>
-                        <a href="#!helping" class="btn btn-link">Helping
-                            Machines</a>
-                        <a href="#!accessories" class="btn btn-link">Accessories</a>
-                        <a href="#!lotions" class="btn btn-link">Lotions</a>
-                        <a href="#!essentials" class="btn btn-link">Essential
-                            oils</a>
+                </div>
+                <div class="col-lg-2 col-md-5">
+                    <h4 class="text-dark mb-4">Products</h4>
+                    <a href="#!helping" class="btn btn-link">Helping
+                        Machines</a>
+                    <a href="#!accessories" class="btn btn-link">Accessories</a>
+                    <a href="#!lotions" class="btn btn-link">Lotions</a>
+                    <a href="#!essentials" class="btn btn-link">Essential
+                        oils</a>
 
-                    </div>
-                    <div class="col-lg-3 col-md-5">
-                        <h4 class="text-dark mb-4">Zara Therapy Clinic</h4>
-                        <!-- <p class="mb-1">Zara Therapy Clinic</p> -->
-                        <p class="mb-1">Providing the best services and products
-                            without using any medicines in Vietnam.</p>
-                        <h6 class="text-dark">&copy;Copyright 2023 - Zara
-                            Therapy Clinic</h6>
-                                
-                        <!-- <br> -->
-                        <div id="current-time"></div>
+                </div>
+                <div class="col-lg-3 col-md-5">
+                    <h4 class="text-dark mb-4">Zara Therapy Clinic</h4>
+                    <!-- <p class="mb-1">Zara Therapy Clinic</p> -->
+                    <p class="mb-1">Providing the best services and products
+                        without using any medicines in Vietnam.</p>
+                        <h6 class="text-dark">&copy;Copyright 2023 - Zara Therapy Clinic</h6>
+                    
+
+                    <!-- <br> -->
+                    <div id="current-time"></div>
                         <script>
                             const outputDom = document.getElementById("current-time")
                             function getCurrentDateAsString() {
@@ -1120,79 +1150,67 @@
 
                     </div>
 
-                    <div class="col-lg-3 col-md-7">
-                        <h4 class="text-dark mb-4">Address</h4>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.273125983394!2d106.6836567!3d10.790381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d34a704ab7%3A0xe4e75cbec27ea20f!2zMjk0IMSQLiBOYW0gS-G7syBLaOG7n2kgTmdoxKlhLCBQaMaw4budbmcgOCwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1683446992468!5m2!1svi!2s"
-                            width="270px" height="160px" style="border:0;"
-                            allowfullscreen loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                <div class="col-lg-3 col-md-7">
+                    <h4 class="text-dark mb-4">Address</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.273125983394!2d106.6836567!3d10.790381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d34a704ab7%3A0xe4e75cbec27ea20f!2zMjk0IMSQLiBOYW0gS-G7syBLaOG7n2kgTmdoxKlhLCBQaMaw4budbmcgOCwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1683446992468!5m2!1svi!2s"
+                        width="270px" height="160px" style="border:0;" allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
             </div>
+            
+
         </div>
-        <!-- Footer End -->
-        <script>
-            document.getElementById("view-online").innerHTML = Math.floor(Math.random() *1+ 1);
-        </script>
+    </div>
+    <!-- Footer End -->
+    <script>
+        document.getElementById("view-online").innerHTML = Math.floor(Math.random() * 1 + 1);
+    </script>
 
-        <button
-            class="btn btn-lg btn-primary btn-lg-square rounded-circle popup-button"
-            data-bs-toggle="modal"
-            data-bs-target="#contactModal">
-            <i class="fa fa-phone"></i>
+    <button class="btn btn-lg btn-primary btn-lg-square rounded-circle popup-button" data-bs-toggle="modal"
+        data-bs-target="#contactModal">
+        <i class="fa fa-phone"></i>
 
-        </button>
-        <div class="modal fade" id="contactModal" tabindex="-1"
-            aria-labelledby="contactModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="w-100 text-center">
-                            <h5 class="modal-title text-primary"
-                                id="contactModalLabel">Contact Hotline</h5>
-                        </div>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
+    </button>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="w-100 text-center">
+                        <h5 class="modal-title text-primary" id="contactModalLabel">Contact Hotline</h5>
                     </div>
-                    <div class="modal-body">
-                        <p>Zara Therapy Clinic Ho Chi Minh: <a
-                                href="tel:+1900123123">1900-123-123</a></p>
-                        <p>Zara Therapy Clinic Ha Noi: <a href="tel:+1900123456">1900-123-456</a></p>
-                        <p>Zara Therapy Clinic Da Nang: <a
-                                href="tel:+1900123789">1900-123-789</a></p>
-                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Zara Therapy Clinic Ho Chi Minh: <a href="tel:+1900123123">1900-123-123</a></p>
+                    <p>Zara Therapy Clinic Ha Noi: <a href="tel:+1900123456">1900-123-456</a></p>
+                    <p>Zara Therapy Clinic Da Nang: <a href="tel:+1900123789">1900-123-789</a></p>
                 </div>
             </div>
         </div>
-        <!-- Back to Top -->
-        <a href="#"
-            class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
-            <i class="bi bi-arrow-up"></i>
-        </a>
-        <!-- Start of LiveChat (www.livechat.com) code -->
-        <script>!function (s, u, b, i, z) { var o, t, r, y; s[i] || (s._sbzaccid = z, s[i] = function () { s[i].q.push(arguments) }, s[i].q = [], s[i]("setAccount", z), r = ["widget.subiz.net", "storage.googleapis" + (t = ".com"), "app.sbz.workers.dev", i + "a" + (o = function (k, t) { var n = t <= 6 ? 5 : o(k, t - 1) + o(k, t - 3); return k !== t ? n : n.toString(32) })(20, 20) + t, i + "b" + o(30, 30) + t, i + "c" + o(40, 40) + t], (y = function (k) { var t, n; s._subiz_init_2094850928430 || r[k] && (t = u.createElement(b), n = u.getElementsByTagName(b)[0], t.async = 1, t.src = "https://" + r[k] + "/sbz/app.js?accid=" + z, n.parentNode.insertBefore(t, n), setTimeout(y, 2e3, k + 1)) })(0)) }(window, document, "script", "subiz", "acrquwfnpwawnmljetuz")</script>
-        <!-- End of LiveChat code -->
+    </div>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    <!-- Start of LiveChat (www.livechat.com) code -->
+    <script>!function (s, u, b, i, z) { var o, t, r, y; s[i] || (s._sbzaccid = z, s[i] = function () { s[i].q.push(arguments) }, s[i].q = [], s[i]("setAccount", z), r = ["widget.subiz.net", "storage.googleapis" + (t = ".com"), "app.sbz.workers.dev", i + "a" + (o = function (k, t) { var n = t <= 6 ? 5 : o(k, t - 1) + o(k, t - 3); return k !== t ? n : n.toString(32) })(20, 20) + t, i + "b" + o(30, 30) + t, i + "c" + o(40, 40) + t], (y = function (k) { var t, n; s._subiz_init_2094850928430 || r[k] && (t = u.createElement(b), n = u.getElementsByTagName(b)[0], t.async = 1, t.src = "https://" + r[k] + "/sbz/app.js?accid=" + z, n.parentNode.insertBefore(t, n), setTimeout(y, 2e3, k + 1)) })(0)) }(window, document, "script", "subiz", "acrquwfnpwawnmljetuz")</script>
+    <!-- End of LiveChat code -->
 
-        <!-- JavaScript Libraries -->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="js/booking.js"></script>
-        <script src="js/viewmore.js"></script>
-        <script src="js/products.js"></script>
-        <script src="js/contact.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/viewmore.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="jquery.notify.js"></script>
+    <script src="js/slim_notifier.js"></script>
 
-        <!-- Template Javascript -->
+    <!-- Template Javascript -->
 
-        <script src="js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+</body>
 
 </html>
