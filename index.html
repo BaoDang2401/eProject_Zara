@@ -258,7 +258,6 @@
                         <div class="tab-pane fade" id="registerForm">
                             <!-- Register Form -->
                             <form id="registerForm" name="myForm">
-
                                 <div class="row">
                                     <div class="col-md-12 mb-4">
 
@@ -319,19 +318,22 @@
                                         </div>
 
                                     </div>
-
-                                    <div class="col-md-12">
+                                    <div class="col-md-12" >
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <input type="radio" name="gender" value="male" required>
+                                            <div class="col-md-3">
+                                                <label class="form-label" for="fullname">Gender :</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                
+                                                <input type="radio" name="gender" value="male" required checked> 
                                                 Male
                                             </div>
-                                            <div class="col-md-4">
-                                                <input type="radio" name="gender" value="female" required>
+                                            <div class="col-md-3">
+                                                <input type="radio" name="gender" value="female" required >
                                                 Female
                                             </div>
-                                            <div class="col-md-4">
-                                                <input type="radio" name="gender" value="other" required>
+                                            <div class="col-md-3">
+                                                <input type="radio" name="gender" value="other" required >
                                                 Other
                                             </div>
                                         </div>
@@ -351,7 +353,7 @@
             </div>
         </div>
     </div>
-
+     
     <!-- Navbar End -->
 
     <div ng-view></div>

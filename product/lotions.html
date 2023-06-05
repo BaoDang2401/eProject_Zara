@@ -3,9 +3,12 @@
 </div>
 <div class="container pb-5">
   <div class="container">
-    <div style="padding-top:40px; padding-left: 70%;">
-     <b class="text-primary">Search Products:</b> <input type="search" placeholder="Search" ng-model="searchName">
-    </div>
+    <div class="row pt-4 pb-3">
+      <div class="col-lg-8 col-md-8 col-sm-12"></div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <b class="text-primary">Search Products:</b> <input type="search" placeholder="Search" ng-model="searchName">
+       </div>
+     </div>
     
     <div class="row justify-content-center">
       <div class="col-lg-4 col-md-4 col-sm-6 pt-3 pb-3 d-flex justify-content-center" ng-repeat="lotion in lotions | filter: {name2: searchName}">
