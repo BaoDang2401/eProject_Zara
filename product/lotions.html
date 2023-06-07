@@ -9,7 +9,6 @@
         <b class="text-primary">Search Products:</b> <input type="search" placeholder="Search" ng-model="searchName">
        </div>
      </div>
-    
     <div class="row justify-content-center">
       <div class="col-lg-4 col-md-4 col-sm-6 pt-3 pb-3 d-flex justify-content-center" ng-repeat="lotion in lotions | filter: {name2: searchName}">
         <div class="product-card ">
@@ -20,12 +19,10 @@
             </div>
             <div class="main-images">
               <img class="default-image" src="{{ lotion.image }}" alt="{{ lotion.name }}">
-
               <img class="hover-image" src="{{ lotion.imagehover }}" alt="{{ lotion.name }}">
             </div>
             <div class="products-details text-center">
               <span class="product-name">{{ lotion.name2 }}</span>
-
               <div class="stars text-center" style="font-size:15px">
                 <i class="fa-solid fa-star products-icon"></i>
                 <i class="fa-solid fa-star products-icon"></i>
